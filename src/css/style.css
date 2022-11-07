@@ -1,0 +1,12 @@
+h1 {
+    color : green;
+}
+
+/* Navbar */
+#navContainer {
+    margin: 0rem 0.5rem;
+}
+.nav-link {
+    color: white;
+    margin: 0rem 0.5rem;;
+}

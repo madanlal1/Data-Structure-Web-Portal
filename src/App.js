@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import TopNavbar from './components/TopNavbar';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -6,7 +6,7 @@ export default function App() {
 
   return (
           <>
-            <Navbar/>
+            <TopNavbar/>
             <h1>Data Structure Web Portal</h1>
             <Footer/>
           </>
