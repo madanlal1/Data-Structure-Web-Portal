@@ -10,3 +10,23 @@ h1 {
     color: white;
     margin: 0rem 0.5rem;;
 }
+
+#_navbar {
+    background-color: #06283D;
+} 
+
+/* //////////////////////////////////// FOOTER */
+
+#footer_div {
+    background-color: #06283D;
+    width: 100%;
+    height: 2.5rem;
+}
+#footer_para {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+#div_para {
+    padding: 8px 0px;
+}
