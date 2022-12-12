@@ -1,5 +1,8 @@
 import TopNavbar from './components/TopNavbar';
 import Footer from './components/Footer';
+import Slider from './components/Slider';
+import CardCarousal from './components/CardCarousal';
+import StaticCard from './components/StaticCard';
 
 export default function App() {
 
@@ -7,8 +10,10 @@ export default function App() {
   return (
           <>
             <TopNavbar/>
-            <h1>Data Structure Web Portal</h1>
+            <Slider/>
+            <StaticCard/>
+            <CardCarousal/>
             <Footer/>
-          </>
+          </> 
   )
 }
