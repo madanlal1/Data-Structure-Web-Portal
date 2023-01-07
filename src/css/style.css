@@ -52,3 +52,43 @@ h1 {
     transform: scale(1.1);
 
 }
+
+/* //////////////////////////////////// sidebar */
+
+#sidebar {
+    background-color: #06283D;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a:hover{
+    color: lightgreen;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* //////////////////////////////////// tutorials */
+
+#tutorials-body {
+    padding-top: 40px;
+    text-align: justify;
+}
+
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}

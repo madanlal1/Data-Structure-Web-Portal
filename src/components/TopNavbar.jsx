@@ -13,7 +13,6 @@ export default function TopNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
-            <Nav.Link href="#topics" className='nav-link'>Topics</Nav.Link>
 
             <NavDropdown
               id="nav-dropdown-dark-example"
@@ -30,6 +29,7 @@ export default function TopNavbar() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="tutorials" className='nav-link'>Tutorials</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,19 +1,14 @@
-import TopNavbar from './components/TopNavbar';
-import Footer from './components/Footer';
-import Slider from './components/Slider';
-import CardCarousal from './components/CardCarousal';
-import StaticCard from './components/StaticCard';
+import Home from './components/Home';
+import {Route, Routes} from 'react-router';
+import Tutorials from './components/Tutorials';
 
 export default function App() {
 
 
   return (
-          <>
-            <TopNavbar/>
-            <Slider/>
-            <StaticCard/>
-            <CardCarousal/>
-            <Footer/>
-          </> 
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/tutorials" element={<Tutorials/>}/>
+    </Routes>    
   )
 }
