@@ -29,7 +29,7 @@ export default function TopNavbar() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="tutorials" className='nav-link'>Tutorials</Nav.Link>
+            <Nav.Link href="/tutorials" className='nav-link'>Tutorials</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

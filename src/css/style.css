@@ -59,10 +59,11 @@ h1 {
     background-color: #06283D;
     margin-top: 40px;
     padding-top: 20px;
+    width: 20%;
 }
 
 ul {
-    font-size: 20px;
+    font-size: 16px;
     list-style-type: none;
 }
 
