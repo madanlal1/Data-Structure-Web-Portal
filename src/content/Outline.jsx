@@ -1,5 +1,5 @@
 export const Outline = [
-    { link : "introduction", topic : "Introduction"},
+    { link : "data-structure", topic : "Data Structure"},
     { link : "array", topic : "Array"},
     { link : "1d-array", topic : "1D Array"},
     { link : "2d-array", topic : "2D Array"},

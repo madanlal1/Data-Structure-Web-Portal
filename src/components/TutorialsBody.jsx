@@ -4,12 +4,11 @@ import { useParams } from "react-router-dom";
 const TutorialsBody = () => {
 
     const param = useParams();
-    console.log("title >> ",param.topic.slice(0,2));
         
     return (
         <>
             {
-                Data && Data.map(element => {
+                Data.filter(elem => elem.link === param.topic).map(element => {
                     return (
                         <>
                         <h1>{element.title}</h1>
