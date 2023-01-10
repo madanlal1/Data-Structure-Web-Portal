@@ -31,6 +31,7 @@ export default function TopNavbar() {
             </NavDropdown>
             <Nav.Link href="/tutorials/data-structure" className='nav-link'>Tutorials</Nav.Link>
           </Nav>
+            <Nav.Link href="/feedback" className='nav-link, feedback'>Feedback</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

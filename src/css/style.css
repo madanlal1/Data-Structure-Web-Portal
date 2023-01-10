@@ -28,7 +28,10 @@ h1 {
 
 #_navbar {
     background-color: #06283D;
-} 
+}
+.feedback:hover {
+    color: rgb(207, 207, 207);
+}
 /* //////////////////////////////////// FOOTER */
 
 #footer_div {
@@ -92,4 +95,22 @@ ul li a{
 }
 #right {
     float: right;
+}
+
+/* //////////////////////////////////////// code keeper */
+
+.code-clipboard {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#clipboard-button {
+    padding: 10px 15px;
+    /* background-color: #007bff; */
+    float: right;
+    display: grid;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
 }
