@@ -1,4 +1,4 @@
-import {Data} from "../content/Data";
+import {Data} from "../assets/content/Data";
 import { useParams } from "react-router-dom";
 
 function next() {

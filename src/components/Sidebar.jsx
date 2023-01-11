@@ -1,4 +1,4 @@
-import {Outline} from '../content/Outline';
+import {Outline} from '../assets/content/Outline';
 import {useParams} from 'react-router-dom';
 // 
 

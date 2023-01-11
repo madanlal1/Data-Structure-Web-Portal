@@ -1,6 +1,6 @@
 import TopNavbar from "./TopNavbar";
 import Footer from "./Footer";
-import '../css/style.css';
+import '../assets/css/style.css';
 import Sidebar from "./Sidebar";
 import TutorialsBody from "./TutorialsBody";
 

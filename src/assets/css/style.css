@@ -28,6 +28,11 @@ h1 {
 
 #_navbar {
     background-color: #06283D;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .feedback:hover {
     color: rgb(207, 207, 207);
@@ -39,6 +44,8 @@ h1 {
     width: 100%;
     height: 2.5rem;
     margin-top: 50px;
+    position: relative;
+    bottom: 0;
 }
 #footer_para {
     text-align: center;
@@ -60,8 +67,9 @@ h1 {
 
 #sidebar {
     background-color: #06283D;
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 55px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     width: 20%;
 }
 
@@ -86,7 +94,7 @@ ul li a{
 /* //////////////////////////////////// tutorials */
 
 #tutorials-body {
-    padding-top: 40px;
+    padding-top: 100px;
     text-align: justify;
 }
 
@@ -113,4 +121,13 @@ ul li a{
     color: #007bff;
     border: none;
     cursor: pointer;
+}
+
+/* //////////////////////////////////// Feedback */
+
+#feedback-form {
+    padding: 100px;
+}
+#feedback-vector {
+    margin: auto;
 }

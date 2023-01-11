@@ -1,6 +1,6 @@
-import image from '../images/pic.jpg';
-import image2 from '../images/pic2.jpg';
-import image3 from '../images/pic3.jpg';
+import image from '../assets/images/pic.jpg';
+import image2 from '../assets/images/pic2.jpg';
+import image3 from '../assets/images/pic3.jpg';
 
 export default function Slider() {
   return (

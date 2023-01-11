@@ -1,4 +1,4 @@
-import image from '../images/pic.jpg';
+import image from '../assets/images/pic.jpg';
 import Marquee from "react-fast-marquee";
 import ContentCard from './ContentCard';
 

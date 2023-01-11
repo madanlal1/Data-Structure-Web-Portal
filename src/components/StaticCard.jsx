@@ -1,5 +1,5 @@
 import ContentCard from "./ContentCard";
-import image from "../images/pic.jpg";
+import image from "../assets/images/pic.jpg";
 
 export default function StaticCard() {
   return (
