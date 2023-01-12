@@ -1,5 +1,6 @@
 import {Data} from "../assets/content/Data";
 import { useParams } from "react-router-dom";
+import React from 'react';
 
 function next() {
     // implement it's functionality...
@@ -19,11 +20,14 @@ const TutorialsBody = () => {
             {
                 Data.filter(elem => elem.link === param.topic).map(element => {
                     return (
-                        <>
+                        <React.Fragment key={element.title}>
                         <h1>{element.title}</h1>
-                        <img src={element.image.img} width="100%" alt="image" className="mt-3 mb-4"/>
+                        <div className="ratio ratio-21x9">
+                            <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" allow='autoplay' title="YouTube video" allowFullScreen></iframe>
+                        </div>
+                        <img src={element.image} width="100%" alt="image" className="mt-3 mb-4"/>
                         <p>{element.content1}</p>
-                        </>
+                        </React.Fragment>
                     ) 
                 })
             }

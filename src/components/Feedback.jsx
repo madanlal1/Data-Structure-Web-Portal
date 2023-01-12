@@ -1,14 +1,14 @@
-import TopNavbar from "./TopNavbar";
-import Footer from "./Footer";
 import '../assets/css/style.css';
 import feedbackVector from '../assets/images/feedback.jpg'
 import Ratings from "./Ratings";
+import TopNavbar from './TopNavbar';
+import Footer from './Footer';
+
 
 const Feedback = () => {
     return (
         <>
         <TopNavbar/>
-
         <div className="row g-0">
             <div id="feedback-vector" className="col-6">
                 <img src={feedbackVector} alt="feedback-vector" width="90%"/>
@@ -41,5 +41,4 @@ const Feedback = () => {
         </>
     )
 }
-
 export default Feedback;

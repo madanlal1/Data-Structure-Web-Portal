@@ -9,7 +9,6 @@ export default class Ratings extends React.Component {
       rating: 1
     };
   }
- 
   onStarClick(nextValue, prevValue, name) {
     this.setState({rating: nextValue});
   }
@@ -18,8 +17,8 @@ export default class Ratings extends React.Component {
     const { rating } = this.state;
     // console.log(rating);
     return (                
-      <div>
-        <label>Rating</label><br/> 
+      <div style={{fontSize: 24}}>
+        <label style={{fontSize: 20}}>Rating</label><br/> 
         <StarRatingComponent 
           name="rate1" 
           starCount={5}

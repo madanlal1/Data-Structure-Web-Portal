@@ -47,6 +47,6 @@ export default function App() {
       <Route path="/tutorials/graph" element={<Tutorials/>}/>
       <Route path="/tutorials/dfs" element={<Tutorials/>}/>
       <Route path="/tutorials/bfs" element={<Tutorials/>}/> */}
-    </Routes>    
+    </Routes>  
   )
 }

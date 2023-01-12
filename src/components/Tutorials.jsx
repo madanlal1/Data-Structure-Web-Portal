@@ -1,8 +1,9 @@
-import TopNavbar from "./TopNavbar";
-import Footer from "./Footer";
 import '../assets/css/style.css';
 import Sidebar from "./Sidebar";
 import TutorialsBody from "./TutorialsBody";
+import TopNavbar from './TopNavbar';
+import Footer from './Footer';
+
 
 const Tutorials = () => {
     return (

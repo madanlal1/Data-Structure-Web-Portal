@@ -1,8 +1,9 @@
-import TopNavbar from './TopNavbar';
-import Footer from './Footer';
 import Slider from './Slider';
 import CardCarousal from './CardCarousal';
 import StaticCard from './StaticCard';
+import TopNavbar from './TopNavbar';
+import Footer from './Footer';
+
 
 const Home = () => {
     return (

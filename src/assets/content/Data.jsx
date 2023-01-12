@@ -1,6 +1,6 @@
 import img from '../images/pic.jpg';
+import arrayImage from '../images/array.gif';
 import '../css/style.css';
-import arrayText from '../syntax/array.txt';
 
 function copyToClipboard() {
     const codeSnippet = document.getElementById("code-snippet");
@@ -38,7 +38,7 @@ export const Data = [
         <strong>Hash Tables:</strong> A hash table is a data structure that stores data in an associative array, which is a collection of key-value pairs.<br/><br/>
         
         These are just a few examples of common data structures. There are many others as well, each with its own set of characteristics and uses.</>,
-        image : {img}
+        image : img
     },
     {
         link : "array",
@@ -101,7 +101,7 @@ export const Data = [
         It's important to note that, like in most programming languages, arrays are 0-indexed in Java, meaning that the first element has an index of 0, the second element has an index of 1, and so on.
         <br/>
        </>,
-        image : {img}
+        image : arrayImage
     },
     {
         link : "1d-array",
@@ -152,7 +152,7 @@ export const Data = [
         <br/>
         This is a new feature from Java 9, it allows to create arrays in a more concise way, and it is also type-safe. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "2d-array",
@@ -209,7 +209,7 @@ export const Data = [
         <br/>
         This creates a 2D array in a more concise and type-safe way. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "linkedlist",
@@ -250,7 +250,7 @@ export const Data = [
         In this example, we created three nodes and linked them together, forming a list with three elements: 10, 20, and 30. The variable head points to the first element of the list, which has a value of 10. The second element, which has a value of 20, is located at the address stored in head.next, and so on. <br/>
         Java already has a built-in class for linked lists called LinkedList, it implements the List interface and you can use it without the need of creating your own LinkedList class. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "singly-linkedlist",
@@ -333,7 +333,7 @@ export const Data = [
         In this example, we are creating a new list and adding elements to it using append() and prepend() methods, and deleting an element using the delete() method. The singly linked list can also be traversed by starting from the head node, and following the next references until the end of the list. <br/>
         It is worth noting that, there are other types of linked list like circular linked list, doubly linked list etc, with different characteristics and trade offs depending on the use case, but singly linked list has the lowest overhead among all of them. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "doubly-linkedlist",
@@ -409,7 +409,7 @@ export const Data = [
         As you can see, the doubly linked list implementation has more complexity than singly linked list, since it needs to maintain a reference to both the previous and next nodes, but the extra complexity also allows for more flexibility when traversing the list and for some operations to have O(1) time complexity like deletion and insertion at the end of the list. <br/>
         It's important to note that, depending on the use case and the operations needed, either a singly or doubly linked list can be more appropriate. It is important to weigh the trade-offs and choose the implementation that best fits your needs. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "circular-singly-linkedlist",
@@ -458,7 +458,7 @@ export const Data = [
         Circular linked list are used in scenarios where a list needs to be circular, a common use case is when the list is used as a buffer and new items are added to the front while oldest items are removed from the back. Other use cases are in the implementation of certain algorithms such as cycle detection in a graph. <br/>
         It's important to note that traversing a circular linked list requires extra care, to avoid infinite loops, a technique like marking nodes as visited is used, or to keep a counter for the number of nodes visited. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "circular-doubly-linkedlist",
@@ -500,7 +500,7 @@ export const Data = [
         </div>
         <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "queue",
@@ -552,7 +552,7 @@ export const Data = [
         In this implementation, the Queue class has three instance variables: an int array called items which stores the elements in the queue, head variable that stores the index of the front element of the queue, and tail variable that stores the index of the next available position in the array. The enqueue() method adds an element to the tail of the queue and the dequeue() method removes the element from the head of the queue. <br/><br/>
         This is just one example of how you can implement a queue in Java, other examples include using a singly linked list, a doubly linked list, and using the pre-built Queue class in Java collections framework. The pre-built classes in Java collections framework such as ArrayDeque, LinkedList can be used as a queue as well, they have the same behavior as described above and they are thread-safe and resizable. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "priority-queue",
@@ -588,7 +588,7 @@ export const Data = [
         Priority Queue can be used in the scenarios where the elements need to be processed based on their priority, for example in Dijkstra's Algorithm for shortest path, Huffman coding for data compression, Prim's algorithm for finding Minimum Spanning Tree, etc. <br/>
         It is important to note that, a priority queue can have multiple solutions, it depends on how the priority is defined and on the use case. In some cases a min heap might be more appropriate, in other cases a max heap. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "stack",
@@ -632,7 +632,7 @@ export const Data = [
         This is just one example of how you can implement a stack in Java, other examples include using a singly linked list, a doubly linked list and using the pre-built Stack class in Java collections framework. <br/>
         It's important to note that, Stack data structure can be used in many algorithms such as the undo-redo feature in a text editor, matching brackets in a code, evaluation of postfix expressions, in the implementation of certain algorithms such as Depth First Search and in many other use cases. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "time-complexity",
@@ -701,7 +701,7 @@ export const Data = [
         <br/>
         The time complexity analysis for an algorithm is important because it can help you to choose the most efficient algorithm for a given task, especially when the size of the input data is large. It's worth noting that, the time complexity of an algorithm can change with the implementation and the best case, worst case, average case all can have different time complexities. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "space-complexity",
@@ -788,7 +788,7 @@ export const Data = [
         It's worth noting that the space complexity of merge sort is independent of the sorting order and is same for both best, worst and average cases. <br/>
         Space complexity is an important aspect of an algorithm because it can be a limiting factor when working with large inputs or when working in a memory-constrained environment. It's good practice to always consider the space complexity of an algorithm while designing and evaluating them. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "recursion",
@@ -813,7 +813,7 @@ export const Data = [
         Recursive function can be useful when the problem at hand can be broken down into subproblems that are similar in nature to the original problem. Examples of such problems include traversing a tree or a graph data structure, finding the nth Fibonacci number and solving mathematical problems like the Tower of Hanoi problem. <br/>
         It's important to note that not all problems can be solved using recursion and it requires careful design and implementation to avoid infinite loops and stack overflow. Also, recursive function might use more memory because of stack overflow and it could be less efficient than iterative function. But in some cases recursive function might be more readable and easy to understand then iterative version. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "trees",
@@ -864,7 +864,7 @@ export const Data = [
         Trees are useful for problems that involve hierarchical relationships and where the data needs to be searched, added or removed efficiently. Examples of such problems include file systems, web pages, and network routing protocols. <br/>
         It's worth noting that, trees are used in many algorithms and data structure such as sorting and searching, path finding, and data compression and so on. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "binary-tree",
@@ -914,7 +914,7 @@ export const Data = [
         Binary trees can be used in many different algorithms and data structures such as sorting algorithms, searching algorithms, and data compression algorithms. They also play a significant role in data structures like Binary Search Trees, AVL Trees, Heaps and Tries. <br/>
         It's important to note that if a tree is not a binary tree, it can have a different number of child for each node, and the algorithms and properties might differ from binary tree algorithms. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "binary-search-tree",
@@ -983,7 +983,7 @@ export const Data = [
         Binary Search Tree have their own advantages and disadvantages as well. Some advantages are that they are very efficient in searching, inserting and deleting items. They also can be easily implemented using linked structures and dynamic memory allocation. Some disadvantages is that they can easily become unbalanced which can cause poor performance. To overcome this problem, Self-balancing binary search tree data structures like AVL Trees and Red-Black Trees are used. <br/>
         It's worth noting that, because of the efficient searching capabilities, the use of binary search trees is very common in many libraries, algorithms and computer science related applications. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "avl-tree",
@@ -1088,12 +1088,12 @@ export const Data = [
         It is important to note that, because AVL tree are balanced, the height of the tree is always O(log n) which makes the search, insert, and delete operations very efficient. Also, as AVL Tree is a balanced tree, it guarantee that these operations are performed at an average case of O(log n). AVL tree are widely used in many applications where a balance is required such as real-time systems, databases and file systems. <br/>
         It is also worth noting that, AVL tree is not the only self-balancing binary search tree. There are other types of self-balancing binary search tree, such as red-black tree and splay tree, that guarantee similar performance and can be used depending on the specific use case and requirements of the application. <br/>
        </>,
-        image : {img}
+        image : img
     },
     {
         link : "max-heap",
         title : "Max Heap",
-        content1 : <><b>Content Missing... </b><br/><br/>
+        content1 : <><b>Max heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be greater than or equal to the values of its children.</b><br/><br/>
 
         The main idea behind an AVL tree is to maintain the height balance property in a binary search tree. The idea is to check whether the height of left subtree and right subtree of any node differs by more than 1, if so the tree is rotated to restore its balance. There are four different types of rotations in AVL tree that are used to balance the tree. <br/><br/>
         Here's an example of a simple AVL tree implementation in Java: <br/>
@@ -1193,6 +1193,918 @@ export const Data = [
         It is important to note that, because AVL tree are balanced, the height of the tree is always O(log n) which makes the search, insert, and delete operations very efficient. Also, as AVL Tree is a balanced tree, it guarantee that these operations are performed at an average case of O(log n). AVL tree are widely used in many applications where a balance is required such as real-time systems, databases and file systems. <br/>
         It is also worth noting that, AVL tree is not the only self-balancing binary search tree. There are other types of self-balancing binary search tree, such as red-black tree and splay tree, that guarantee similar performance and can be used depending on the specific use case and requirements of the application. <br/>
        </>,
-        image : {img}
+        image : img
+    },
+    {
+        link : "min-heap",
+        title : "Min Heap",
+        content1 : <><b>Min heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be less than or equal to the values of its children.</b><br/><br/>
+
+        One common way to implement a min heap in Java is to use an array to store the elements of the heap. The parent-child relationships between the elements can be determined using their indices in the array: for a node at index i, its left child is located at index 2i+1 and its right child is located at index 2i+2. <br/><br/>
+        Here is an example of a basic MinHeap class in Java that uses an array to store the elements: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public class MinHeap {
+                    private int[] heap;
+                    private int size;
+
+                    public MinHeap(int capacity) {
+                        heap = new int[capacity];
+                        size = 0;
+                    }
+
+                    public boolean isEmpty() {
+                        return size == 0;
+                    }
+
+                    public int peek() {
+                        if (isEmpty()) {
+                            throw new IllegalStateException();
+                        }
+                        return heap[0];
+                    }
+
+                    public void insert(int value) {
+                        if (size == heap.length) {
+                            throw new IllegalStateException();
+                        }
+                        heap[size] = value;
+                        fixUp(size);
+                        size++;
+                    }
+
+                    public int delete() {
+                        int result = heap[0];
+                        heap[0] = heap[size - 1];
+                        size--;
+                        fixDown(0);
+                        return result;
+                    }
+
+                    private void fixUp(int index) {
+                        int node = heap[index];
+                        while (index > 0 && node < heap[parent(index)]) {
+                            heap[index] = heap[parent(index)];
+                            index = parent(index);
+                        }
+                        heap[index] = node;
+                    }
+
+                    private void fixDown(int index) {
+                        int node = heap[index];
+                        int child = leftChild(index);
+                        while (child < size) {
+                            if (child + 1 < size && heap[child + 1] < heap[child]) {
+                                child++;
+                            }
+                            if (node <= heap[child]) {
+                                break;
+                            }
+                            heap[index] = heap[child];
+                            index = child;
+                            child = leftChild(index);
+                        }
+                        heap[index] = node;
+                    }
+
+                    private int parent(int index) {
+                        return (index - 1) / 2;
+                    }
+
+                    private int leftChild(int index) {
+                        return index * 2 + 1;
+                    }
+                }
+                You could also use the class PriorityQueue which is an unbounded priority queue based on a priority heap.
+                PriorityQueue<Integer> pq = new PriorityQueue<>();
+                pq.add(3);
+                pq.add(2);
+                pq.add(1);
+                pq.poll(); // returns 1 */}
+            </code></pre>
+        </div>
+        <br/>
+        This is just a basic example, there's more ways to implement min heap but the core concept is always the same. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "pre-order",
+        title : "Pre Order",
+        content1 : <><b>Pre-order traversal is a method for visiting the nodes of a tree or a graph data structure in a specific order. When applied to a tree, it visits the root node first, then recursively visits all the nodes in the left subtree, and finally recursively visits all the nodes in the right subtree. This means that the root node is visited before its children.</b><br/><br/>
+
+        One common way to implement pre-order traversal in Java is to use recursion. Here is an example of a basic preOrder() method that implements pre-order traversal on a binary tree: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void preOrder() {
+                        preOrder(root);
+                    }
+
+                    private void preOrder(Node node) {
+                        if (node != null) {
+                            System.out.print(node.data + " ");
+                            preOrder(node.left);
+                            preOrder(node.right);
+                        }
+                    }
+                }
+                Another way to do this using an explicit stack is using Iterative PreOrder Traversal:
+                class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void preOrder() {
+                        Stack<Node> stack = new Stack<Node>();
+                        Node node = root;
+                        while (node != null) {
+                            System.out.print(node.data + " ");
+                            if (node.right != null) {
+                                stack.push(node.right);
+                            }
+                            if (node.left != null) {
+                                node = node.left;
+                            } else if (stack.empty()) {
+                                node = null;
+                            } else {
+                                node = stack.pop();
+                            }
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        This are just examples, In a real world scenario you should adjust it to your needs. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "in-order",
+        title : "In Order",
+        content1 : <><b>In-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the root node, and finally the right subtree. This means that the left subtree is traversed before the root and the root is traversed before the right subtree.</b><br/><br/>
+
+        One common way to implement in-order traversal in Java is to use recursion. Here is an example of a basic inOrder() method that implements in-order traversal on a binary tree: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void inOrder() {
+                        inOrder(root);
+                    }
+
+                    private void inOrder(Node node) {
+                        if (node != null) {
+                            inOrder(node.left);
+                            System.out.print(node.data + " ");
+                            inOrder(node.right);
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        Another way of implementing in-order traversal is by using an explicit stack. Here is an example of an inOrder() method that implements in-order traversal on a binary tree using an explicit stack: <br/>
+       
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void inOrder() {
+                        Stack<Node> stack = new Stack<Node>();
+                        Node node = root;
+
+                        while (node != null || !stack.empty()) {
+                            while (node != null) {
+                                stack.push(node);
+                                node = node.left;
+                            }
+                            node = stack.pop();
+                            System.out.print(node.data + " ");
+                            node = node.right;
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        Note that both implementations above are for a specific binary tree implementation, the structure and classes could vary depending on the problem you are trying to solve. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "post-order",
+        title : "Post Order",
+        content1 : <><b>Post-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the right subtree, and finally the root node. This means that the left subtree is traversed before the right subtree and the both of them are traversed before the root.</b><br/><br/>
+
+        One common way to implement post-order traversal in Java is to use recursion. Here is an example of a basic postOrder() method that implements post-order traversal on a binary tree: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void postOrder() {
+                        postOrder(root);
+                    }
+
+                    private void postOrder(Node node) {
+                        if (node != null) {
+                            postOrder(node.left);
+                            postOrder(node.right);
+                            System.out.print(node.data + " ");
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        Another way to implement post-order traversal is using two stacks. Here is an example of an postOrder() method that implements post-order traversal on a binary tree using two stacks: <br/>
+       
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* class Node {
+                    int data;
+                    Node left;
+                    Node right;
+
+                    Node(int data) {
+                        this.data = data;
+                        left = null;
+                        right = null;
+                    }
+                }
+
+                public class BinaryTree {
+                    Node root;
+
+                    public void postOrder() {
+                        if(root == null) return;
+                        Stack<Node> s1 = new Stack<Node>();
+                        Stack<Node> s2 = new Stack<Node>();
+                        s1.push(root);
+                        while(!s1.isEmpty()) {
+                            Node temp = s1.pop();
+                            s2.push(temp);
+                            if(temp.left != null) s1.push(temp.left);
+                            if(temp.right != null) s1.push(temp.right);
+                        }
+                        while(!s2.isEmpty()) {
+                            Node temp = s2.pop();
+                            System.out.print(temp.data + " ");
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        Again, keep in mind that these are just examples and the classes and structures used may vary depending on the specific problem you are trying to solve. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "sorting",
+        title : "Sorting",
+        content1 : <><b>Sorting is the process of arranging elements in a particular order, typically in an array or a list. In computer science, sorting algorithms are used to organize data in a way that it is easier to search, process, and analyze. There are many different sorting algorithms, each with their own strengths and weaknesses. Some of the most well-known sorting algorithms include: <br/>
+        •	Bubble sort <br/>
+        •	insertion sort <br/>
+        •	selection sort <br/>
+        •	merge sort <br/>
+        •	quick sort <br/>
+        •	heap sort <br/>
+        •	counting sort <br/>
+        </b><br/><br/>
+
+        Here's an example of the bubble sort algorithm in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public static void bubbleSort(int[] arr) {
+                    for (int i = 0; i < arr.length - 1; i++) {
+                        for (int j = 0; j < arr.length - i - 1; j++) {
+                            if (arr[j] > arr[j + 1]) {
+                                int temp = arr[j];
+                                arr[j] = arr[j + 1];
+                                arr[j + 1] = temp;
+                            }
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        And an example of the quick sort algorithm in Java: <br/>
+       
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public class QuickSort {
+                    public static void sort(int[] arr, int low, int high) {
+                        if (low < high) {
+                            int pivotIndex = partition(arr, low, high);
+                            sort(arr, low, pivotIndex);
+                            sort(arr, pivotIndex + 1, high);
+                        }
+                    }
+
+                    private static int partition(int[] arr, int low, int high) {
+                        int pivot = arr[low];
+                        int i = low - 1;
+                        int j = high + 1;
+                        while (true) {
+                            do {
+                                i++;
+                            } while (arr[i] < pivot);
+                            do {
+                                j--;
+                            } while (arr[j] > pivot);
+                            if (i >= j) {
+                                return j;
+                            }
+                            int temp = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = temp;
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        Java also provides a sort method in the Arrays class, which uses the Dual-Pivot Quicksort algorithm. <br/>
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+                Arrays.sort(array); */}
+            </code></pre>
+        </div>
+        <br/>
+        These are just examples of sorting algorithms, there's many others and even variations of these, the best sorting algorithm for a specific use case depends on various factors such as data distribution, size, and stability.
+       </>,
+        image : img
+    },
+    {
+        link : "bubble-sort",
+        title : "Bubble Sort",
+        content1 : <><b>Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</b> <br/><br/>
+        
+        The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list as the sort iterations progress. <br/>
+        Here's an example of the bubble sort algorithm in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public static void bubbleSort(int[] arr) {
+                    for (int i = 0; i < arr.length - 1; i++) {
+                        for (int j = 0; j < arr.length - i - 1; j++) {
+                            if (arr[j] > arr[j + 1]) {
+                                int temp = arr[j];
+                                arr[j] = arr[j + 1];
+                                arr[j + 1] = temp;
+                            }
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        In this example, the outer loop runs from 0 to n-1 (n is the size of the array) and the inner loop runs from 0 to n-i-1. This way in every iteration the largest element will move to the end of the array, in the next iteration it will not be considered anymore, so the next largest element will move to the end and so on. <br/>
+        It's important to keep in mind that Bubble sort has an O(n^2) time complexity, this makes it less efficient than other sorting algorithms like quicksort, merge sort or heapsort for larger arrays. However, bubble sort is easy to understand and can be useful in certain cases where the list is nearly sorted or the elements are small, such as sorting small lists or for educational purposes. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "merge-sort",
+        title : "Merge Sort",
+        content1 : <><b>Merge sort is a divide-and-conquer algorithm for sorting. It works by dividing an unsorted list into two sublists, recursively sorting the sublists, and then merging the sublists back into a single sorted list.</b> <br/><br/>
+        
+        The merge sort algorithm can be broken down into three main steps: <br/>
+        1.	Divide the unsorted list into n sublists, each containing one element. <br/>
+        2.	Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list. <br/>
+        Here is an example of the merge sort algorithm implemented in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public class MergeSort {
+                    public static void sort(int[] arr) {
+                        int[] temp = new int[arr.length];
+                        sort(arr, temp, 0, arr.length - 1);
+                    }
+
+                    private static void sort(int[] arr, int[] temp, int left, int right) {
+                        if (left < right) {
+                            int mid = (left + right) / 2;
+                            sort(arr, temp, left, mid);
+                            sort(arr, temp, mid + 1, right);
+                            merge(arr, temp, left, mid, right);
+                        }
+                    }
+
+                    private static void merge(int[] arr, int[] temp, int left, int mid, int right) {
+                        int i = left;
+                        int j = mid + 1;
+                        int k = left;
+                        while (i <= mid && j <= right) {
+                            if (arr[i] < arr[j]) {
+                                temp[k] = arr[i];
+                                i++;
+                            } else {
+                                temp[k] = arr[j];
+                                j++;
+                            }
+                            k++;
+                        }
+                        while (i <= mid) {
+                            temp[k] = arr[i];
+                            i++;
+                            k++;
+                        }
+                        while (j <= right) {
+                            temp[k] = arr[j];
+                            j++;
+                            k++;
+                        }
+                        for (k = left; k <= right; k++) {
+                            arr[k] = temp[k];
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        The merge method takes the three indices left, middle and right, the left and right indices represent the boundaries of the part of the array that we are currently sorting and the middle index is used to split the array in two. Then, it compares the elements in the two subarrays and copies the smaller element into a temporary array, incrementing the corresponding index. This process is repeated until all the elements from both subarrays have been copied into the temporary array. Finally, the sorted elements from the temporary array are copied back into the original array. <br/>
+        As with the previous explanation, the merge sort algorithm is based on the divide and conquer paradigm, breaking down the original problem into smaller subproblems that are recursively solved. And, like before, merge sort has an O(n log n) time complexity, making it more efficient than algorithms like bubble sort or insertion sort for larger arrays. Additionally, merge sort is also a stable sorting algorithm, meaning that if two elements have the same value, their relative order in the output will be the same as in the input. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "quick-sort",
+        title : "Quick Sort",
+        content1 : <><b>QuickSort is a divide and conquer algorithm that is used to sort a collection of items. It's a widely used sorting algorithm because of its simplicity and its performance. The basic idea of the quicksort algorithm is to pick a "pivot" element from the array, partition the other elements into two sub-arrays, one containing all the elements less than the pivot, and the other containing all the elements greater than the pivot. Then it recursively sorts the two sub-arrays. </b> <br/><br/>
+        
+        Here's an example of the quicksort algorithm implemented in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public class QuickSort {
+                    public static void sort(int[] arr, int low, int high) {
+                        if (low < high) {
+                            int pivotIndex = partition(arr, low, high);
+                            sort(arr, low, pivotIndex);
+                            sort(arr, pivotIndex + 1, high);
+                        }
+                    }
+
+                    private static int partition(int[] arr, int low, int high) {
+                        int pivot = arr[low];
+                        int i = low - 1;
+                        int j = high + 1;
+                        while (true) {
+                            do {
+                                i++;
+                            } while (arr[i] < pivot);
+                            do {
+                                j--;
+                            } while (arr[j] > pivot);
+                            if (i >= j) {
+                                return j;
+                            }
+                            int temp = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = temp;
+                        }
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        In this implementation, the sort method takes the parameters of low, high, and the array we want to sort. The partition method is used to divide the array into the two sub-arrays. In this case, the pivot is chosen as the first element of the array, but for a better performance, it's advisable to use a random element as pivot or a pivot that is the median of the array. <br/>
+        Quicksort has an average case time complexity of O(n log n) and a worst-case time complexity of O(n^2). However, the average case is more likely to happen and the algorithm is efficient in practice. Like merge sort, quicksort is also not a stable sorting algorithm, that means that two elements with the same value may not keep their relative order in the output as in the input. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "selection-sort",
+        title : "Selection Sort",
+        content1 : <><b>Selection sort is a simple sorting algorithm that works by repeatedly selecting the smallest (or largest, depending on the implementation) element from the unsorted portion of the array and swapping it with the first element of the unsorted portion. This process is repeated for the remaining unsorted elements until the entire array is sorted. </b> <br/><br/>
+        
+        The selection sort algorithm can be broken down into two main steps: <br/> 
+        1.	Find the minimum element from the unsorted portion of the array. <br/>
+        2.	Swap the found element with the first element of the unsorted portion. <br/>
+        Here is an example of the selection sort algorithm implemented in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public static void selectionSort(int[] arr) {
+                    int n = arr.length;
+                    for (int i = 0; i < n - 1; i++) {
+                        int min_idx = i;
+                        for (int j = i + 1; j < n; j++) {
+                            if (arr[j] < arr[min_idx]) {
+                                min_idx = j;
+                            }
+                        }
+                        int temp = arr[min_idx];
+                        arr[min_idx] = arr[i];
+                        arr[i] = temp;
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        In this example, the outer loop runs from 0 to n-2 (n is the size of the array) and the inner loop runs from i+1 to n-1. In each iteration of the outer loop, the inner loop compares the current element with the minimum element in the subarray starting from i+1 to n-1, and it keeps the index of the minimum element in min_idx. When the inner loop ends, the element at the index min_idx is swapped with the element at the current index of the outer loop (i). <br/>
+        It's important to keep in mind that the selection sort algorithm has a time complexity of O(n^2), which makes it less efficient than other sorting algorithms like quicksort, merge sort or heapsort for larger arrays. However, the selection sort is simple to understand and it may be useful in certain cases, like sorting small lists or for educational purposes. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "insertion-sort",
+        title : "Insertion Sort",
+        content1 : <><b>Insertion sort is a simple sorting algorithm that works by building up a sorted list one item at a time. It repeatedly takes the next element from the input list and inserts it into the correct position in the sorted list. </b> <br/><br/>
+        
+        The insertion sort algorithm can be broken down into two main steps: <br/> 
+        1.	Start with an empty sorted list and an unsorted input list. <br/>
+        2.	Repeat the following steps for each element in the input list: <br/>
+        •	Take the next element from the input list <br/>
+        •	Compare it with each element in the sorted list, moving them to the right as necessary <br/>
+        •	Insert the next element into the correct position in the sorted list <br/>
+        Here is an example of the insertion sort algorithm implemented in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public static void insertionSort(int[] arr) {
+                    int n = arr.length;
+                    for (int i = 1; i < n; i++) {
+                        int key = arr[i];
+                        int j = i-1;
+                        while (j >= 0 && arr[j] > key) {
+                            arr[j+1] = arr[j];
+                            j--;
+                        }
+                        arr[j+1] = key;
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        In this example, the outer loop runs from 1 to n-1 (n is the size of the array) and the inner loop runs from i-1 to 0. At each iteration of the outer loop, the inner loop takes the element at the current index i of the outer loop and compares it with the elements in the subarray that starts at i-1, it moves the elements to the right as necessary and it finds the position to insert the key (the element at the index i) in the correct position in the sorted subarray. <br/>
+        It's important to keep in mind that the insertion sort algorithm has a time complexity of O(n^2) in the worst case, but the best and average case time complexity is O(n) when the input array is already sorted. This algorithm can be useful in certain cases, such as small lists or when the input array is almost sorted, it can also be used as a subroutine in other sorting algorithms. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "hashing",
+        title : "Hashing",
+        content1 : <><b>Hashing is a technique used to implement an associative array, a structure that can map keys to values. A hash function is used to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found or stored. The goal of a good hash function is to distribute the keys evenly across the array, so that on average each slot contains the same number of keys (a property known as a uniform distribution).  </b> <br/><br/>
+        
+        Here's an example of a simple hash function that can be used to store strings in a hash table: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* public class SimpleHashFunction {
+                    public static int hash(String key, int tableSize) {
+                        int hashVal = 0;
+                        for (int i = 0; i < key.length(); i++) {
+                            hashVal += key.charAt(i);
+                        }
+                        return hashVal % tableSize;
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        In this example, the hash function iterates through each character in the input string and adds its ASCII value to a running total. The result is then taken modulo the table size to ensure that it falls within the range of valid indices for the hash table. <br/>
+        It's important to note that hash functions can have collisions when two keys map to the same index, in order to avoid collisions some techniques can be used like open addressing, chaining, rehashing, etc. <br/>
+        Hash tables are useful when you need to store and retrieve data quickly based on a key, they can also be used for other algorithms such as counting sort, in which the keys are transformed into integers between 0 and k-1 by a hash function, and then a counting algorithm is applied. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "hash-tables",
+        title : "Hash Tables",
+        content1 : <><b>A hash table is a data structure that is used to store key-value pairs, where the key is used to access the associated value. The basic idea behind a hash table is to use a function (called a hash function) to map keys to indices in an array. The array is called the table, and each cell in the table is called a slot. The key-value pair is then stored in the slot that corresponds to the index generated by the hash function. </b> <br/><br/>
+        
+        Java provides a built-in class called Hashtable that implements a hash table. Here is an example of how you might use a Hashtable in Java to map strings to integers: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* import java.util.Hashtable;
+
+                public class HashtableExample {
+                public static void main(String[] args) {
+                    Hashtable<String, Integer> hashtable = new Hashtable<String, Integer>();
+                    
+                    // Add some key-value pairs to the hash table
+                    hashtable.put("Apple", 1);
+                    hashtable.put("Banana", 2);
+                    hashtable.put("Cherry", 3);
+                    
+                    // Retrieve the value for a specific key
+                    int bananaValue = hashtable.get("Banana");
+                    System.out.println("The value for the key 'Banana' is: " + bananaValue);
+                    
+                    // Check if a key is in the hash table
+                    if (hashtable.containsKey("Cherry")) {
+                    System.out.println("The key 'Cherry' is in the hash table.");
+                    }
+                    
+                    // Remove a key-value pair from the hash table
+                    hashtable.remove("Apple");
+                    System.out.println("The value for the key 'Apple' is: " + hashtable.get("Apple"));
+                }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        The above example would output: <br/>
+
+        The value for the key 'Banana' is: 2 <br/>
+        The key 'Cherry' is in the hash table. <br/>
+        The value for the key 'Apple' is: null <br/><br/>
+        It is worth noting that in Java 8, the recommended class for key-value maps is HashMap, the Hashtable is considered an older class and more thread-safe but less performant. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "graph",
+        title : "Graph",
+        content1 : <><b>A graph is a non-linear data structure that consists of a finite set of vertices (also called nodes) and a set of edges connecting these vertices. The vertices can represent anything, such as cities in a transportation network or web pages on the internet, and the edges represent relationships or connections between the vertices, such as roads between cities or links between web pages. </b> <br/><br/>
+        
+        There are two main types of graphs: <br/>
+        •	Directed Graphs (or Digraphs) which edges have a direction, it means they connect one vertex to another. <br/>
+        •	Undirected Graphs, edges connect two vertices in both directions. <br/>
+        In Java, you can represent a graph using various data structures and classes, such as an adjacency matrix or an adjacency list. Here is an example of how you might represent an undirected graph using an adjacency list in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* import java.util.LinkedList;
+
+                public class Graph {
+                private int numVertices;
+                private LinkedList<Integer>[] adjacencyList;
+
+                public Graph(int numVertices) {
+                    this.numVertices = numVertices;
+                    this.adjacencyList = new LinkedList[numVertices];
+                    
+                    for (int i = 0; i < numVertices; i++) {
+                    this.adjacencyList[i] = new LinkedList<Integer>();
+                    }
+                }
+                
+                public void addEdge(int vertex1, int vertex2) {
+                    this.adjacencyList[vertex1].add(vertex2);
+                    this.adjacencyList[vertex2].add(vertex1);
+                }
+                
+                public void printGraph() {
+                    for (int i = 0; i < numVertices; i++) {
+                    System.out.print("Vertex " + i + " is connected to: ");
+                    
+                    for (int vertex : adjacencyList[i]) {
+                        System.out.print(vertex + " ");
+                    }
+                    System.out.println();
+                    }
+                }
+                
+                public static void main(String[] args) {
+                    Graph graph = new Graph(5);
+                    graph.addEdge(0, 1);
+                    graph.addEdge(0, 4);
+                    graph.addEdge(1, 2);
+                    graph.addEdge(1, 3);
+                    graph.addEdge(1, 4);
+                    graph.addEdge(2, 3);
+                    graph.printGraph();
+                }
+                } */}
+            </code></pre>
+        </div>
+        <br/>
+        The above example will output: <br/> <br/>
+
+        Vertex 0 is connected to: 1 4  <br/>
+        Vertex 1 is connected to: 0 2 3 4  <br/>
+        Vertex 2 is connected to: 1 3  <br/>
+        Vertex 3 is connected to: 1 2  <br/>
+        Vertex 4 is connected to: 0 1 <br/> <br/>
+        It is worth noting that Java does not provide a built-in class for graphs, so typically developers use either adjacency lists or adjacency matrix with linkedlist or array to implement graph. Also, There are Graph libraries like JGraphT, that provides a lot of useful classes and interfaces for working with Graphs in Java. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "dfs",
+        title : "DFS",
+        content1 : <><b>DFS (Depth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the DFS algorithm is to start at a given vertex and explore as far as possible along each branch before backtracking. <br/> The process of DFS traversal of a graph is similar to that of traversing a tree, but with a graph, we may encounter a cycle, therefore, we need to keep track of the visited vertex to avoid going in an infinite loop. </b> <br/><br/>
+        
+        Here is an example of how to perform a DFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* import java.util.LinkedList;
+
+                public class DFS {
+                private int numVertices;
+                private LinkedList<Integer>[] adjacencyList;
+                private boolean[] visited;
+
+                public DFS(int numVertices) {
+                    this.numVertices = numVertices;
+                    this.adjacencyList = new LinkedList[numVertices];
+                    this.visited = new boolean[numVertices];
+                    
+                    for (int i = 0; i < numVertices; i++) {
+                    this.adjacencyList[i] = new LinkedList<Integer>();
+                    }
+                }
+                
+                public void addEdge(int vertex1, int vertex2) {
+                    this.adjacencyList[vertex1].add(vertex2);
+                    this.adjacencyList[vertex2].add(vertex1);
+                }
+                
+                public void dfs(int startVertex) {
+                    System.out.print(startVertex + " ");
+                    visited[startVertex] = true;
+                    
+                    for (int vertex : adjacencyList[startVertex]) {
+                    if (!visited[vertex]) {
+                        dfs(vertex);
+                    }
+                    }
+                }
+                
+                public static void main(String[] args) {
+                    DFS graph = new DFS(5);
+                    graph.addEdge(0, 1);
+                    graph.addEdge(0, 4);
+                    graph.addEdge(1, 2);
+                    graph.addEdge(1, 3);
+                    graph.addEdge(1, 4);
+                    graph.addEdge(2, 3);
+                    graph.dfs(0);
+                }
+                } */}
+            </code></pre>
+        </div>
+        <br/><br/>
+        The above example will output: 0 1 2 3 4 <br/>
+        It is important to note that DFS is not the only algorithm for graph traversal, another commonly used algorithm is BFS (Breadth-First Search) which is different from DFS in the order of visiting the vertices. DFS usually explores deeper in the graph before visiting the adjacent vertex, while BFS visits the adjacent vertex before going deeper. <br/>
+        Also note that DFS can also used to solve other problems like finding connected components, detecting cycle in a graph, topological sorting and finding strongly connected components in a directed graph. <br/>
+       </>,
+        image : img
+    },
+    {
+        link : "bfs",
+        title : "BFS",
+        content1 : <><b>BFS (Breadth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the BFS algorithm is to start at a given vertex and explore all the vertices at the current depth level before moving on to the vertices at the next depth level. </b> <br/><br/>
+        
+        Here is an example of how to perform a BFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
+            <pre><code id="code-snippet">
+                {/* import java.util.LinkedList;
+                import java.util.Queue;
+
+                public class BFS {
+                    private int numVertices;
+                    private LinkedList<Integer>[] adjacencyList;
+                    private boolean[] visited;
+
+                    public BFS(int numVertices) {
+                        this.numVertices = numVertices;
+                        this.adjacencyList = new LinkedList[numVertices];
+                        this.visited = new boolean[numVertices];
+
+                        for (int i = 0; i < numVertices; i++) {
+                            this.adjacencyList[i] = new LinkedList<Integer>();
+                        }
+                    }
+
+                    public void addEdge(int vertex1, int vertex2) {
+                        this.adjacencyList[vertex1].add(vertex2);
+                        this.adjacencyList[vertex2].add(vertex1);
+                    }
+
+                    public void bfs(int startVertex) {
+                        Queue<Integer> queue = new LinkedList<>();
+                        queue.add(startVertex);
+                        visited[startVertex] = true;
+
+                        while (!queue.isEmpty()) {
+                            int currentVertex = queue.poll();
+                            System.out.print(currentVertex + " ");
+
+                            for (int vertex : adjacencyList[currentVertex]) {
+                                if (!visited[vertex]) {
+                                    visited[vertex] = true;
+                                    queue.add(vertex);
+                                }
+                            }
+                        }
+                    }
+
+                    public static void main(String[] args) {
+                        BFS graph = new BFS(5);
+                        graph.addEdge(0, 1);
+                        graph.addEdge(0, 4);
+                        graph.addEdge(1, 2);
+                        graph.addEdge(1, 3);
+                        graph.addEdge(1, 4);
+                        graph.addEdge(2, 3);
+                        graph.bfs(0);
+                    }
+                } */}
+            </code></pre>
+        </div>
+        <br/><br/>
+        The above example will output: 0 1 4 2 3 <br/>
+        It is important to note that BFS is not the only algorithm for graph traversal, another commonly used algorithm is DFS (Depth-First Search) which is different from BFS in the order of visiting the vertices. BFS visits the adjacent vertex before going deeper, while DFS usually explores deeper in the graph before visiting the adjacent vertex. <br/>
+        Also note that BFS can be used to solve other problems like finding the shortest path in an unweighted graph, test bipartiteness of a graph, and traversing a maze. <br/>
+       </>,
+        image : img
     },
 ];
