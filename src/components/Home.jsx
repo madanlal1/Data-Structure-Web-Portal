@@ -9,9 +9,8 @@ const Home = () => {
     return (
         <>
             <TopNavbar/>
-            <Slider/>
-            <StaticCard/>
             <CardCarousal/>
+            <StaticCard/>
             <Footer/>
           </> 
     )

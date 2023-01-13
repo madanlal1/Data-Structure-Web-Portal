@@ -2,6 +2,7 @@ import Home from './components/Home';
 import {Route, Routes} from 'react-router';
 import Tutorials from './components/Tutorials';
 import Feedback from './components/Feedback';
+import AboutUS from './components/AboutUS';
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
       <Route path="/tutorials" exact element={<Tutorials/>}/>
       <Route path="/tutorials/:topic" element={<Tutorials/>}/>
       <Route path="/feedback" element={<Feedback/>}/>
+      <Route path="/aboutus" element={<AboutUS/>}/>
       {/* <Route path="/tutorials/introduction" element={<Tutorials/>}/> 
       <Route path="/tutorials/array" element={<Tutorials/>}/>
       <Route path="/tutorials/1d-array" element={<Tutorials/>}/>

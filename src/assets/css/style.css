@@ -8,10 +8,6 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-.row1 {
-    margin-left: 15px;
-    margin-top: 30px;
-}
 /* Card {
     transform: scale(1.5);
     box-shadow: grey 5px;
@@ -28,7 +24,7 @@ h1 {
 
 #_navbar {
     background-color: #06283D;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,6 +32,16 @@ h1 {
 }
 .feedback:hover {
     color: rgb(207, 207, 207);
+}
+.aboutUs {
+    float: right;
+    padding-left: 50px;
+}
+.aboutUs:hover {
+    color: rgb(207, 207, 207);
+}
+.aboutus {
+    margin-top: 100px;
 }
 /* //////////////////////////////////// FOOTER */
 
@@ -130,4 +136,15 @@ ul li a{
 }
 #feedback-vector {
     margin: auto;
+}
+
+/* ////////////////////////////////////// Card Carousal */
+.skillsContainer {
+    margin-top : 100px;
+}
+.row1 {
+    margin : 100px 30px 40px 30px;
+}
+.row2 {
+    margin : 100px 0px -60px 30px;
 }

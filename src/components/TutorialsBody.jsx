@@ -22,10 +22,10 @@ const TutorialsBody = () => {
                     return (
                         <React.Fragment key={element.title}>
                         <h1>{element.title}</h1>
-                        <div className="ratio ratio-21x9">
-                            <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" allow='autoplay' title="YouTube video" allowFullScreen></iframe>
-                        </div>
-                        <img src={element.image} width="100%" alt="image" className="mt-3 mb-4"/>
+                        <div className="ratio ratio-16x9">
+                            <iframe src={element.video} allow='autoplay' title="YouTube video" allowFullScreen></iframe>
+                            {/* <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" allow='autoplay' title="YouTube video" allowFullScreen></iframe> */}
+                        </div> <br/>
                         <p>{element.content1}</p>
                         </React.Fragment>
                     ) 

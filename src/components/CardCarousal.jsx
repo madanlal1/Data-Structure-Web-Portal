@@ -1,12 +1,13 @@
 import image from '../assets/images/pic.jpg';
 import Marquee from "react-fast-marquee";
 import ContentCard from './ContentCard';
+import '../assets/css/style.css';
 
 export default function CardCarousal() {
     
     return (
       <>
-      <div className="row1">
+      <div className="row2">
         <h1>Data Structures</h1>
       </div>
         <div className="skillsContainer">

@@ -8,7 +8,7 @@ export default function TopNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" id="_navbar" variant="dark">
       <Container id="navContainer">
-        <Navbar.Brand href="#home">Easy DS</Navbar.Brand>
+        <Navbar.Brand href="/">Easy DS</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -32,6 +32,7 @@ export default function TopNavbar() {
             <Nav.Link href="/tutorials/data-structure" className='nav-link'>Tutorials</Nav.Link>
           </Nav>
             <Nav.Link href="/feedback" className='nav-link, feedback'>Feedback</Nav.Link>
+            <Nav.Link href="/aboutus" className='nav-link, aboutUs'>AboutUS</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
