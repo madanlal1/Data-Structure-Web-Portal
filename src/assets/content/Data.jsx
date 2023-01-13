@@ -1,5 +1,3 @@
-import img from '../images/pic.jpg';
-import arrayImage from '../images/first.gif';
 import '../css/style.css';
 import videolink from '../videos/array.mp4';
 

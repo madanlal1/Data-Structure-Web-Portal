@@ -1,4 +1,3 @@
-import Slider from './Slider';
 import CardCarousal from './CardCarousal';
 import StaticCard from './StaticCard';
 import TopNavbar from './TopNavbar';

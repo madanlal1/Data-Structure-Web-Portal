@@ -17,7 +17,7 @@ export default function AboutUS() {
                 <div className="row">
 
                     <div className="col" style={{ display: 'flex', justifyContent: 'center' }}>
-                        <img src={madan} alt="profile Image" className="center" style={{ borderRadius: '270px' }} width="180px" height="180px" />
+                        <img src={madan} alt="developer pic" className="center" style={{ borderRadius: '270px' }} width="180px" height="180px" />
                     </div>
 
                 </div>
