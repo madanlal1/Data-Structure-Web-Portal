@@ -27,6 +27,7 @@ export default function AboutUS() {
                         <h2>Madan Lal</h2><br/>
                         <h3>Software Engineer</h3><br/>
                         <p><strong><i>"Dream big, stay positive, work <br/> hard and enjoy the journey."</i></strong></p>
+                        <p><strong>// Social Icons Here (YouTube | GitHub | LinkedIn )</strong></p>
                     </div>
 
                 </div>

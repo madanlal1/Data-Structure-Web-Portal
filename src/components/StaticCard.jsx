@@ -1,25 +1,27 @@
 import ContentCard from "./ContentCard";
-import image from "../assets/images/pic.jpg";
+import {Data} from '../assets/content/Data';
+
+
+
 
 export default function StaticCard() {
   return (
     <>
       <div className="row1">
         <h1>Explore Data Structures</h1>
+
+        <h1 style={{textAlign:'center'}}>// search bar here...</h1>
+
       </div>
       <div className="row g-0">
-        <div className="col">
-          <ContentCard image={image} name="Data Structure" />
-        </div>
-        <div className="col">
-          <ContentCard image={image} name="Data Structure" />
-        </div>
-        <div className="col">
-          <ContentCard image={image} name="Data Structure" />
-        </div>
-        <div className="col">
-          <ContentCard image={image} name="Data Structure" />
-        </div>
+        {
+          Data.map(element => 
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <ContentCard image={element.image} name={element.title} />
+            </div>
+          )
+        }
+       
       </div>
     </>
   );

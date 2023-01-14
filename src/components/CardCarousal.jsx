@@ -1,7 +1,7 @@
-import image from '../assets/images/pic.jpg';
 import Marquee from "react-fast-marquee";
 import ContentCard from './ContentCard';
 import '../assets/css/style.css';
+import {Data} from '../assets/content/Data';
 
 export default function CardCarousal() {
     
@@ -14,27 +14,21 @@ export default function CardCarousal() {
                 <div className="skill--scroll">
                     <Marquee 
                         gradient={false} 
-                        speed={100} 
+                        speed={80} 
                         pauseOnHover={true}
                         pauseOnClick={true} 
                         delay={0}
                         play={true} 
                         direction="left"
                     >
-
-                      <div className='col'>
-                        <ContentCard image={image} name="Data Structure" />
-                      </div>
-                      <div className='col'>
-                        <ContentCard image={image} name="Data Structure" />
-                      </div>
-                      <div className='col'>
-                        <ContentCard image={image} name="Data Structure" />
-                      </div>
-                      <div className='col'>
-                        <ContentCard image={image} name="Data Structure" />
-                      </div>
-                        
+                      {
+                        Data.map(element => 
+                          
+                          <div className='card-carousal'>
+                            <ContentCard image={element.image} name={element.title} />
+                          </div>
+                        )
+                      }                        
                     </Marquee>
                 </div>
             </div>

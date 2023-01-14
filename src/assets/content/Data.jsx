@@ -1,5 +1,6 @@
 import '../css/style.css';
 import videolink from '../videos/array.mp4';
+import img from '../images/pic.jpg';
 
 function copyToClipboard() {
     const codeSnippet = document.getElementById("code-snippet");
@@ -21,6 +22,7 @@ export const Data = [
         video : videolink,
         link : "data-structure",
         title : "Data Structure",
+        image : img,
         content1 : <><b>A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks.</b> Here are some examples of common data structures: <br/><br/>
 
         <strong>Arrays:</strong> An array is a collection of items stored at contiguous memory locations. The items can be of the same type or of different types.<br/>
@@ -43,6 +45,7 @@ export const Data = [
         video : videolink,
         link : "array",
         title : "Array",
+        image : img,
         content1 : <><b>An array is a data structure that stores a collection of elements, which are accessed by their position or index. Each element in the array is identified by an index, which is an integer value that ranges from 0 to the size of the array minus 1.</b><br/><br/>
 
         Here's an example of an array of integers in Java:<br/>
@@ -106,6 +109,7 @@ export const Data = [
         video : videolink,
         link : "1d-array",
         title : "1D Array",
+        image : img,
         content1 : <><b>A one-dimensional (1D) array is a type of array that has only one dimension, and stores a linear collection of elements. Each element in a 1D array is accessed by its index, which is an integer value representing the position of the element in the array. </b><br/><br/>
 
         In Java, a 1D array can be declared and initialized in several ways:<br/>
@@ -157,6 +161,7 @@ export const Data = [
         video : videolink,
         link : "2d-array",
         title : "2D Array",
+        image : img,
         content1 : <><b>A two-dimensional (2D) array is an array that has two dimensions, and stores a grid of elements. Each element in a 2D array is accessed by its row and column indices, which are integer values representing the position of the element in the grid.</b><br/><br/>
 
         In Java, a 2D array is actually an array of arrays, and can be declared and initialized in several ways:<br/>
@@ -214,6 +219,7 @@ export const Data = [
         video : videolink,
         link : "linkedlist",
         title : "Linked List",
+        image : img,
         content1 : <><b>A linked list is a data structure that stores a collection of elements, called nodes, in which each node points to the next node in the list. It is a dynamic data structure, meaning that the number of elements in a linked list can change during the program's execution.</b><br/><br/>
 
         In Java, you can use a class and object-oriented programming to create a linked list. You can create a class called Node that will represent a node in the linked list. The class would typically have two fields: data, which stores the value of the element, and next, which stores a reference to the next node in the list.<br/><br/>
@@ -255,6 +261,7 @@ export const Data = [
         video : videolink,
         link : "singly-linkedlist",
         title : "Singly Linked List",
+        image : img,
         content1 : <><b>A singly linked list is a data structure that consists of a chain of nodes, where each node contains an element and a reference to the next node in the list. The first node is called the head of the list, and the last node points to null, indicating the end of the list. The list has no reference to previous node, hence called Singly Linked List.</b><br/><br/>
 
         In Java, you can implement a singly linked list using a class that defines a Node and a LinkedList class. Here's an example of a simple singly linked list implementation in Java:<br/>
@@ -338,6 +345,7 @@ export const Data = [
         video : videolink,
         link : "doubly-linkedlist",
         title : "Doubly Linked List",
+        image : img,
         content1 : <><b>A doubly linked list is similar to a singly linked list, but each node contains an additional reference to the previous node in the list, as well as the next node. This allows for more flexibility when traversing the list, as you can traverse it in either direction (forward or backward) .</b><br/><br/>
 
         Here's an example of a simple doubly linked list implementation in Java:<br/>
@@ -414,6 +422,7 @@ export const Data = [
         video : videolink,
         link : "circular-singly-linkedlist",
         title : "Circular Singly Linked List",
+        image : img,
         content1 : <><b>A circular singly linked list is a variation of the singly linked list where the last node in the list points back to the first node, forming a loop. It's called circular because of this looping behavior. A circular linked list can be either a circular singly linked list or a circular doubly linked list.</b><br/><br/>
 
         Here's an example of a simple circular singly linked list implementation in Java:<br/>
@@ -463,6 +472,7 @@ export const Data = [
         video : videolink,
         link : "circular-doubly-linkedlist",
         title : "Circular Doubly Linked List",
+        image : img,
         content1 : <><b>A circular doubly linked list is similar to a circular singly linked list, but it has an additional reference to the previous node in addition to the next node in the list. This allows for more flexibility when traversing the list in either direction, but also increases the complexity of the implementation. </b><br/><br/>
 
         Here's an example of a simple circular doubly linked list implementation in Java: <br/>
@@ -505,6 +515,7 @@ export const Data = [
         video : videolink,
         link : "queue",
         title : "Queue",
+        image : img,
         content1 : <><b>A queue is a data structure that follows the First-In-First-Out (FIFO) principle, which means that the first element added to the queue will be the first one to be removed. It's often referred to as a "waiting line" or a "line of customers" where customers are added at the back of the queue and served from the front of the queue. </b><br/>
 
         In Java, you can implement a queue using an array or a linked list, but the most commonly used implementation is using an array along with two variables: the head and the tail indices. <br/><br/>
@@ -557,6 +568,7 @@ export const Data = [
         video : videolink,
         link : "priority-queue",
         title : "Priority Queue",
+        image : img,
         content1 : <><b>A priority queue is a special type of queue where each element has a priority associated with it. In a priority queue, an element with a high priority is dequeued before an element with a low priority. If two elements have the same priority, they are served according to their order in the queue. It can also be implemented as a min heap or max heap, where the smallest or the largest element respectively is at the top of the heap. </b><br/>
 
         In Java, there is a pre-built PriorityQueue class in the java.util package that implements a priority queue using a min-heap. Here's an example of how you can use the PriorityQueue class to create a priority queue and add elements to it: <br/>
@@ -593,6 +605,7 @@ export const Data = [
         video : videolink,
         link : "stack",
         title : "Stack",
+        image : img,
         content1 : <><b>A stack is a data structure that follows the Last-In-First-Out (LIFO) principle, which means that the last element added to the stack will be the first one to be removed. It's often visualized as a "vertical stack" of elements, with the most recent element added at the top and the oldest element at the bottom. </b><br/>
 
         In Java, you can implement a stack using an array or a linked list, but the most commonly used implementation is using an array along with an integer variable called top to keep track of the index of the top of the stack. <br/><br/>
@@ -637,6 +650,7 @@ export const Data = [
         video : videolink,
         link : "time-complexity",
         title : "Time Complexity",
+        image : img,
         content1 : <><b>Time complexity is a measure of how long an algorithm takes to run as a function of the size of the input. It's often represented using big O notation, which expresses the upper bound of the running time of an algorithm. </b><br/>
 
         The time complexity of an algorithm can be determined by counting the number of basic operations the algorithm performs. For example, if an algorithm requires a constant number of operations regardless of the size of the input, its time complexity is O(1). If the number of operations grows linearly with the size of the input, the time complexity is O(n), where n is the size of the input. <br/><br/>
@@ -706,6 +720,7 @@ export const Data = [
         video : videolink,
         link : "space-complexity",
         title : "Space Complexity",
+        image : img,
         content1 : <><b>Space complexity is a measure of how much memory an algorithm uses as a function of the size of the input. Like time complexity, space complexity is often represented using big O notation. </b><br/>
 
         The space complexity of an algorithm can be determined by counting the amount of memory used by the algorithm, including memory used by the program itself, memory used by any data structures, and memory used for any temporary variables. <br/><br/>
@@ -793,6 +808,7 @@ export const Data = [
         video : videolink,
         link : "recursion",
         title : "Recursion",
+        image : img,
         content1 : <><b>Recursion is a programming technique where a function calls itself in order to solve a problem. In a recursive function, the problem is divided into one or more smaller subproblems, each of which is solved by calling the function again with modified input. Eventually, the function reaches a base case, which is a condition that stops the recursion, and the function returns a value or solution to the original problem. </b><br/>
 
         Here's an example of a simple recursive function in Java that calculates the factorial of a given number: <br/>
@@ -818,6 +834,7 @@ export const Data = [
         video : videolink,
         link : "trees",
         title : "Trees",
+        image : img,
         content1 : <><b>A tree is a non-linear data structure that simulates a hierarchical structure with a set of connected nodes. A tree consists of a set of nodes and edges that connect them. Each node, also called a vertex, can have zero or more child nodes, but it has only one parent node, except for the root node, which has no parent. The topmost node in the tree is called the root node, and the nodes that don't have any child nodes are called leaf nodes. </b><br/>
 
         There are different types of trees like binary tree, binary search tree, AVL tree, B-tree etc. <br/><br/>
@@ -869,6 +886,7 @@ export const Data = [
         video : videolink,
         link : "binary-tree",
         title : "Binary Tree",
+        image : img,
         content1 : <><b>A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. This contrast with other types of trees, such as B-trees, which can have more than two children per node. A binary tree can be used for many different purposes, for example, for storage and retrieval of data, to find the shortest path between two nodes or for the implementation of certain algorithms such as the Huffman coding. </b><br/><br/>
 
         Here's an example of a simple binary tree implementation in Java: <br/>
@@ -919,6 +937,7 @@ export const Data = [
         video : videolink,
         link : "binary-search-tree",
         title : "Binary Search Tree",
+        image : img,
         content1 : <><b>A binary search tree (BST) is a binary tree data structure in which each node has at most two children, and is characterized by the property that the value of each node is greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree. This ordering of elements allows for efficient insertion, deletion, and search operations. </b><br/><br/>
 
         Here's an example of a simple binary search tree implementation in Java: <br/>
@@ -988,7 +1007,8 @@ export const Data = [
         video : videolink,
         link : "avl-tree",
         title : "AVL Tree",
-        content1 : <><b>An AVL tree (Adelson-Velsky and Landis tree) is a self-balancing binary search tree. It is a type of balanced tree where the difference in heights of the left and right subtrees of any node is at most one. It is named after its two Soviet inventors, Georgy Adelson-Velsky and Evgenii Landis. </b><br/>
+        image : img,
+        content1 : <><b>An AVL tree (Adelson-Velsky and Landis tree) is a self-balancing binary search tree. It is a type of balanced tree where the difference in heights of the left and right subtrees of any node is at most one. </b><br/>
 
         The main idea behind an AVL tree is to maintain the height balance property in a binary search tree. The idea is to check whether the height of left subtree and right subtree of any node differs by more than 1, if so the tree is rotated to restore its balance. There are four different types of rotations in AVL tree that are used to balance the tree. <br/><br/>
         Here's an example of a simple AVL tree implementation in Java: <br/>
@@ -1093,6 +1113,7 @@ export const Data = [
         video : videolink,
         link : "max-heap",
         title : "Max Heap",
+        image : img,
         content1 : <><b>Max heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be greater than or equal to the values of its children.</b><br/><br/>
 
         The main idea behind an AVL tree is to maintain the height balance property in a binary search tree. The idea is to check whether the height of left subtree and right subtree of any node differs by more than 1, if so the tree is rotated to restore its balance. There are four different types of rotations in AVL tree that are used to balance the tree. <br/><br/>
@@ -1198,6 +1219,7 @@ export const Data = [
         video : videolink,
         link : "min-heap",
         title : "Min Heap",
+        image : img,
         content1 : <><b>Min heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be less than or equal to the values of its children.</b><br/><br/>
 
         One common way to implement a min heap in Java is to use an array to store the elements of the heap. The parent-child relationships between the elements can be determined using their indices in the array: for a node at index i, its left child is located at index 2i+1 and its right child is located at index 2i+2. <br/><br/>
@@ -1293,6 +1315,7 @@ export const Data = [
         video : videolink,
         link : "pre-order",
         title : "Pre Order",
+        image : img,
         content1 : <><b>Pre-order traversal is a method for visiting the nodes of a tree or a graph data structure in a specific order. When applied to a tree, it visits the root node first, then recursively visits all the nodes in the left subtree, and finally recursively visits all the nodes in the right subtree. This means that the root node is visited before its children.</b><br/><br/>
 
         One common way to implement pre-order traversal in Java is to use recursion. Here is an example of a basic preOrder() method that implements pre-order traversal on a binary tree: <br/>
@@ -1371,6 +1394,7 @@ export const Data = [
         video : videolink,
         link : "in-order",
         title : "In Order",
+        image : img,
         content1 : <><b>In-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the root node, and finally the right subtree. This means that the left subtree is traversed before the root and the root is traversed before the right subtree.</b><br/><br/>
 
         One common way to implement in-order traversal in Java is to use recursion. Here is an example of a basic inOrder() method that implements in-order traversal on a binary tree: <br/>
@@ -1453,6 +1477,7 @@ export const Data = [
         video : videolink,
         link : "post-order",
         title : "Post Order",
+        image : img,
         content1 : <><b>Post-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the right subtree, and finally the root node. This means that the left subtree is traversed before the right subtree and the both of them are traversed before the root.</b><br/><br/>
 
         One common way to implement post-order traversal in Java is to use recursion. Here is an example of a basic postOrder() method that implements post-order traversal on a binary tree: <br/>
@@ -1537,6 +1562,7 @@ export const Data = [
         video : videolink,
         link : "sorting",
         title : "Sorting",
+        image : img,
         content1 : <><b>Sorting is the process of arranging elements in a particular order, typically in an array or a list. In computer science, sorting algorithms are used to organize data in a way that it is easier to search, process, and analyze. There are many different sorting algorithms, each with their own strengths and weaknesses. Some of the most well-known sorting algorithms include: <br/>
         •	Bubble sort <br/>
         •	insertion sort <br/>
@@ -1619,6 +1645,7 @@ export const Data = [
         video : videolink,
         link : "bubble-sort",
         title : "Bubble Sort",
+        image : img,
         content1 : <><b>Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</b> <br/><br/>
         
         The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list as the sort iterations progress. <br/>
@@ -1649,6 +1676,7 @@ export const Data = [
         video : videolink,
         link : "merge-sort",
         title : "Merge Sort",
+        image : img,
         content1 : <><b>Merge sort is a divide-and-conquer algorithm for sorting. It works by dividing an unsorted list into two sublists, recursively sorting the sublists, and then merging the sublists back into a single sorted list.</b> <br/><br/>
         
         The merge sort algorithm can be broken down into three main steps: <br/>
@@ -1714,6 +1742,7 @@ export const Data = [
         video : videolink,
         link : "quick-sort",
         title : "Quick Sort",
+        image : img,
         content1 : <><b>QuickSort is a divide and conquer algorithm that is used to sort a collection of items. It's a widely used sorting algorithm because of its simplicity and its performance. The basic idea of the quicksort algorithm is to pick a "pivot" element from the array, partition the other elements into two sub-arrays, one containing all the elements less than the pivot, and the other containing all the elements greater than the pivot. Then it recursively sorts the two sub-arrays. </b> <br/><br/>
         
         Here's an example of the quicksort algorithm implemented in Java: <br/>
@@ -1761,6 +1790,7 @@ export const Data = [
         video : videolink,
         link : "selection-sort",
         title : "Selection Sort",
+        image : img,
         content1 : <><b>Selection sort is a simple sorting algorithm that works by repeatedly selecting the smallest (or largest, depending on the implementation) element from the unsorted portion of the array and swapping it with the first element of the unsorted portion. This process is repeated for the remaining unsorted elements until the entire array is sorted. </b> <br/><br/>
         
         The selection sort algorithm can be broken down into two main steps: <br/> 
@@ -1796,6 +1826,7 @@ export const Data = [
         video : videolink,
         link : "insertion-sort",
         title : "Insertion Sort",
+        image : img,
         content1 : <><b>Insertion sort is a simple sorting algorithm that works by building up a sorted list one item at a time. It repeatedly takes the next element from the input list and inserts it into the correct position in the sorted list. </b> <br/><br/>
         
         The insertion sort algorithm can be broken down into two main steps: <br/> 
@@ -1832,6 +1863,7 @@ export const Data = [
         video : videolink,
         link : "hashing",
         title : "Hashing",
+        image : img,
         content1 : <><b>Hashing is a technique used to implement an associative array, a structure that can map keys to values. A hash function is used to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found or stored. The goal of a good hash function is to distribute the keys evenly across the array, so that on average each slot contains the same number of keys (a property known as a uniform distribution).  </b> <br/><br/>
         
         Here's an example of a simple hash function that can be used to store strings in a hash table: <br/>
@@ -1860,6 +1892,7 @@ export const Data = [
         video : videolink,
         link : "hash-tables",
         title : "Hash Tables",
+        image : img,
         content1 : <><b>A hash table is a data structure that is used to store key-value pairs, where the key is used to access the associated value. The basic idea behind a hash table is to use a function (called a hash function) to map keys to indices in an array. The array is called the table, and each cell in the table is called a slot. The key-value pair is then stored in the slot that corresponds to the index generated by the hash function. </b> <br/><br/>
         
         Java provides a built-in class called Hashtable that implements a hash table. Here is an example of how you might use a Hashtable in Java to map strings to integers: <br/>
@@ -1907,6 +1940,7 @@ export const Data = [
         video : videolink,
         link : "graph",
         title : "Graph",
+        image : img,
         content1 : <><b>A graph is a non-linear data structure that consists of a finite set of vertices (also called nodes) and a set of edges connecting these vertices. The vertices can represent anything, such as cities in a transportation network or web pages on the internet, and the edges represent relationships or connections between the vertices, such as roads between cities or links between web pages. </b> <br/><br/>
         
         There are two main types of graphs: <br/>
@@ -1976,6 +2010,7 @@ export const Data = [
         video : videolink,
         link : "dfs",
         title : "DFS",
+        image : img,
         content1 : <><b>DFS (Depth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the DFS algorithm is to start at a given vertex and explore as far as possible along each branch before backtracking. <br/> The process of DFS traversal of a graph is similar to that of traversing a tree, but with a graph, we may encounter a cycle, therefore, we need to keep track of the visited vertex to avoid going in an infinite loop. </b> <br/><br/>
         
         Here is an example of how to perform a DFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
@@ -2039,6 +2074,7 @@ export const Data = [
         video : videolink,
         link : "bfs",
         title : "BFS",
+        image : img,
         content1 : <><b>BFS (Breadth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the BFS algorithm is to start at a given vertex and explore all the vertices at the current depth level before moving on to the vertices at the next depth level. </b> <br/><br/>
         
         Here is an example of how to perform a BFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
