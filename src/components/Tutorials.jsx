@@ -10,9 +10,9 @@ const Tutorials = () => {
         <>
         <TopNavbar/>
         <div className="row g-0">
-            <div className="col-3" id="sidebar">
+            {/* <div className="col-3" id="sidebar">
                 <Sidebar/>
-            </div>
+            </div> */}
             <div className="col-1">
                 {/* for space */}
             </div>

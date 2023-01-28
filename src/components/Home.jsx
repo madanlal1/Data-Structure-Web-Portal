@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <TopNavbar/>
-            <CardCarousal/>
+            {/* <CardCarousal/> */}
             <StaticCard/>
             <Footer/>
           </> 

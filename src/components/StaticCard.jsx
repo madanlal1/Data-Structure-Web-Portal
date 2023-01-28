@@ -1,27 +1,35 @@
 import ContentCard from "./ContentCard";
 import {Data} from '../assets/content/Data';
-
+import SearchIcon from '@material-ui/icons/Search';
+import '../assets/css/style.css';
+import {useState} from 'react';
+import { Search } from "@material-ui/icons";
 
 
 
 export default function StaticCard() {
+
+  const [search, setSearch] = useState('');
+  console.log(search);
+
   return (
     <>
       <div className="row1">
         <h1>Explore Data Structures</h1>
-
-        <h1 style={{textAlign:'center'}}>// search bar here...</h1>
-
       </div>
-      <div className="row g-0">
+
+      <div className="search-input" style={{width:'40%',display:'grid', margin:'30px auto'}}>
+          <input type="text" onChange={e => setSearch(e.target.value)} className="form-control" placeholder="Search "/>
+        <SearchIcon className='icon'/>
+      </div>
+      <div className="row g-0 m-2 ">
         {
-          Data.map(element => 
+          Data.filter(ele => ele.title.toLowerCase().match(search.toLocaleLowerCase())).map(element => 
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <ContentCard image={element.image} name={element.title} />
+              <ContentCard image={element.image} name={element.title} link={element.link} />
             </div>
           )
         }
-       
       </div>
     </>
   );

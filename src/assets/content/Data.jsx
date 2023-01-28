@@ -1,17 +1,37 @@
 import '../css/style.css';
 import videolink from '../videos/array.mp4';
-import img from '../images/pic.jpg';
+// import img from '../images/pic.jpg';
+import img from '../images/first.gif';
+import _1darray from '../thumbnails/_1darray.gif'; 
+import _2darray from '../thumbnails/_2darray.gif'; 
+import binary_search_tree from '../thumbnails/binary_search_tree.gif'; 
+import binary_tree from '../thumbnails/binary_tree.gif'; 
+import circular_singly_linkedlist from '../thumbnails/circular_singly_linkedlist.gif'; 
+import circular_doubly_linkedlist from '../thumbnails/circular_doubly_linkedlist.gif'; 
+import doubly_linkedlist from '../thumbnails/doubly_linkedlist.gif'; 
+import singly_linkedlist from '../thumbnails/singly_linkedlist.gif'; 
+import queue from '../thumbnails/queue.gif'; 
+import stack from '../thumbnails/stack.gif'; 
+import tree from '../thumbnails/tree.gif'; 
+import bubble_sort from '../thumbnails/bubble_sort.gif'; 
+import bfs from '../thumbnails/bfs.gif'; 
+import dfs from '../thumbnails/dfs.gif'; 
+import pre_order from '../thumbnails/pre_order.gif'; 
+import in_order from '../thumbnails/in_order.gif'; 
+import post_order from '../thumbnails/post_order.gif'; 
 
 function copyToClipboard() {
     const codeSnippet = document.getElementById("code-snippet");
     const button = document.getElementById("clipboard-button");
-
+    
+    // console.log("clicked on copy", codeSnippet.innerText);
+    // alert("clicked on copy", codeSnippet.innerText);
     // Select the text in the code snippet
     codeSnippet.select();
-
+    
     // Copy the selected text to the clipboard
     document.execCommand("copy");
-
+    
     // Change the button text to indicate that the code has been copied
     button.textContent = "Copied!";
 }
@@ -109,7 +129,7 @@ export const Data = [
         video : videolink,
         link : "1d-array",
         title : "1D Array",
-        image : img,
+        image : _1darray,
         content1 : <><b>A one-dimensional (1D) array is a type of array that has only one dimension, and stores a linear collection of elements. Each element in a 1D array is accessed by its index, which is an integer value representing the position of the element in the array. </b><br/><br/>
 
         In Java, a 1D array can be declared and initialized in several ways:<br/>
@@ -161,7 +181,7 @@ export const Data = [
         video : videolink,
         link : "2d-array",
         title : "2D Array",
-        image : img,
+        image : _2darray,
         content1 : <><b>A two-dimensional (2D) array is an array that has two dimensions, and stores a grid of elements. Each element in a 2D array is accessed by its row and column indices, which are integer values representing the position of the element in the grid.</b><br/><br/>
 
         In Java, a 2D array is actually an array of arrays, and can be declared and initialized in several ways:<br/>
@@ -261,7 +281,7 @@ export const Data = [
         video : videolink,
         link : "singly-linkedlist",
         title : "Singly Linked List",
-        image : img,
+        image : singly_linkedlist,
         content1 : <><b>A singly linked list is a data structure that consists of a chain of nodes, where each node contains an element and a reference to the next node in the list. The first node is called the head of the list, and the last node points to null, indicating the end of the list. The list has no reference to previous node, hence called Singly Linked List.</b><br/><br/>
 
         In Java, you can implement a singly linked list using a class that defines a Node and a LinkedList class. Here's an example of a simple singly linked list implementation in Java:<br/>
@@ -345,7 +365,7 @@ export const Data = [
         video : videolink,
         link : "doubly-linkedlist",
         title : "Doubly Linked List",
-        image : img,
+        image : doubly_linkedlist,
         content1 : <><b>A doubly linked list is similar to a singly linked list, but each node contains an additional reference to the previous node in the list, as well as the next node. This allows for more flexibility when traversing the list, as you can traverse it in either direction (forward or backward) .</b><br/><br/>
 
         Here's an example of a simple doubly linked list implementation in Java:<br/>
@@ -422,7 +442,7 @@ export const Data = [
         video : videolink,
         link : "circular-singly-linkedlist",
         title : "Circular Singly Linked List",
-        image : img,
+        image : circular_singly_linkedlist,
         content1 : <><b>A circular singly linked list is a variation of the singly linked list where the last node in the list points back to the first node, forming a loop. It's called circular because of this looping behavior. A circular linked list can be either a circular singly linked list or a circular doubly linked list.</b><br/><br/>
 
         Here's an example of a simple circular singly linked list implementation in Java:<br/>
@@ -472,7 +492,7 @@ export const Data = [
         video : videolink,
         link : "circular-doubly-linkedlist",
         title : "Circular Doubly Linked List",
-        image : img,
+        image : circular_doubly_linkedlist,
         content1 : <><b>A circular doubly linked list is similar to a circular singly linked list, but it has an additional reference to the previous node in addition to the next node in the list. This allows for more flexibility when traversing the list in either direction, but also increases the complexity of the implementation. </b><br/><br/>
 
         Here's an example of a simple circular doubly linked list implementation in Java: <br/>
@@ -515,7 +535,7 @@ export const Data = [
         video : videolink,
         link : "queue",
         title : "Queue",
-        image : img,
+        image : queue,
         content1 : <><b>A queue is a data structure that follows the First-In-First-Out (FIFO) principle, which means that the first element added to the queue will be the first one to be removed. It's often referred to as a "waiting line" or a "line of customers" where customers are added at the back of the queue and served from the front of the queue. </b><br/>
 
         In Java, you can implement a queue using an array or a linked list, but the most commonly used implementation is using an array along with two variables: the head and the tail indices. <br/><br/>
@@ -605,7 +625,7 @@ export const Data = [
         video : videolink,
         link : "stack",
         title : "Stack",
-        image : img,
+        image : stack,
         content1 : <><b>A stack is a data structure that follows the Last-In-First-Out (LIFO) principle, which means that the last element added to the stack will be the first one to be removed. It's often visualized as a "vertical stack" of elements, with the most recent element added at the top and the oldest element at the bottom. </b><br/>
 
         In Java, you can implement a stack using an array or a linked list, but the most commonly used implementation is using an array along with an integer variable called top to keep track of the index of the top of the stack. <br/><br/>
@@ -834,7 +854,7 @@ export const Data = [
         video : videolink,
         link : "trees",
         title : "Trees",
-        image : img,
+        image : tree,
         content1 : <><b>A tree is a non-linear data structure that simulates a hierarchical structure with a set of connected nodes. A tree consists of a set of nodes and edges that connect them. Each node, also called a vertex, can have zero or more child nodes, but it has only one parent node, except for the root node, which has no parent. The topmost node in the tree is called the root node, and the nodes that don't have any child nodes are called leaf nodes. </b><br/>
 
         There are different types of trees like binary tree, binary search tree, AVL tree, B-tree etc. <br/><br/>
@@ -886,7 +906,7 @@ export const Data = [
         video : videolink,
         link : "binary-tree",
         title : "Binary Tree",
-        image : img,
+        image : binary_tree,
         content1 : <><b>A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. This contrast with other types of trees, such as B-trees, which can have more than two children per node. A binary tree can be used for many different purposes, for example, for storage and retrieval of data, to find the shortest path between two nodes or for the implementation of certain algorithms such as the Huffman coding. </b><br/><br/>
 
         Here's an example of a simple binary tree implementation in Java: <br/>
@@ -937,7 +957,7 @@ export const Data = [
         video : videolink,
         link : "binary-search-tree",
         title : "Binary Search Tree",
-        image : img,
+        image : binary_search_tree,
         content1 : <><b>A binary search tree (BST) is a binary tree data structure in which each node has at most two children, and is characterized by the property that the value of each node is greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree. This ordering of elements allows for efficient insertion, deletion, and search operations. </b><br/><br/>
 
         Here's an example of a simple binary search tree implementation in Java: <br/>
@@ -1315,7 +1335,7 @@ export const Data = [
         video : videolink,
         link : "pre-order",
         title : "Pre Order",
-        image : img,
+        image : pre_order,
         content1 : <><b>Pre-order traversal is a method for visiting the nodes of a tree or a graph data structure in a specific order. When applied to a tree, it visits the root node first, then recursively visits all the nodes in the left subtree, and finally recursively visits all the nodes in the right subtree. This means that the root node is visited before its children.</b><br/><br/>
 
         One common way to implement pre-order traversal in Java is to use recursion. Here is an example of a basic preOrder() method that implements pre-order traversal on a binary tree: <br/>
@@ -1394,7 +1414,7 @@ export const Data = [
         video : videolink,
         link : "in-order",
         title : "In Order",
-        image : img,
+        image : in_order,
         content1 : <><b>In-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the root node, and finally the right subtree. This means that the left subtree is traversed before the root and the root is traversed before the right subtree.</b><br/><br/>
 
         One common way to implement in-order traversal in Java is to use recursion. Here is an example of a basic inOrder() method that implements in-order traversal on a binary tree: <br/>
@@ -1477,7 +1497,7 @@ export const Data = [
         video : videolink,
         link : "post-order",
         title : "Post Order",
-        image : img,
+        image : post_order,
         content1 : <><b>Post-order traversal is a method for visiting the nodes of a binary tree data structure in a specific order. When applied to a binary tree, it visits the left subtree, then the right subtree, and finally the root node. This means that the left subtree is traversed before the right subtree and the both of them are traversed before the root.</b><br/><br/>
 
         One common way to implement post-order traversal in Java is to use recursion. Here is an example of a basic postOrder() method that implements post-order traversal on a binary tree: <br/>
@@ -1645,7 +1665,7 @@ export const Data = [
         video : videolink,
         link : "bubble-sort",
         title : "Bubble Sort",
-        image : img,
+        image : bubble_sort,
         content1 : <><b>Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</b> <br/><br/>
         
         The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list as the sort iterations progress. <br/>
@@ -2010,7 +2030,7 @@ export const Data = [
         video : videolink,
         link : "dfs",
         title : "DFS",
-        image : img,
+        image : dfs,
         content1 : <><b>DFS (Depth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the DFS algorithm is to start at a given vertex and explore as far as possible along each branch before backtracking. <br/> The process of DFS traversal of a graph is similar to that of traversing a tree, but with a graph, we may encounter a cycle, therefore, we need to keep track of the visited vertex to avoid going in an infinite loop. </b> <br/><br/>
         
         Here is an example of how to perform a DFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
@@ -2074,7 +2094,7 @@ export const Data = [
         video : videolink,
         link : "bfs",
         title : "BFS",
-        image : img,
+        image : bfs,
         content1 : <><b>BFS (Breadth-First Search) is a type of traversal algorithm for traversing and searching trees or graphs. The basic idea of the BFS algorithm is to start at a given vertex and explore all the vertices at the current depth level before moving on to the vertices at the next depth level. </b> <br/><br/>
         
         Here is an example of how to perform a BFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>

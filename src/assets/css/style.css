@@ -14,6 +14,10 @@ h1 {
 } */
 
 /* /////////////////////////////////// Navbar */
+.nav-dropdown-scroll {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
 #navContainer {
     margin: 0rem 0.5rem;
 }
@@ -67,7 +71,6 @@ h1 {
 
 .card_scale:hover {
     transform: scale(1.1);
-
 }
 .card-carousal {
     margin : 20px;
@@ -148,8 +151,28 @@ ul li a{
     margin-top : 100px;
 }
 .row1 {
-    margin : 80px 30px 40px 30px;
+    margin : 90px 0px 30px 30px;
 }
 .row2 {
     margin : 100px 0px -60px 30px;
 }
+
+/* /////////////////////////////////////////// search bar */
+.search-input {
+    position: relative; /* Make the parent container relative */
+}
+
+.search-input input {
+    padding-right: 40px; /* Make room for the icon */
+    border-radius: 20px;
+  }
+  
+  .search-input .icon {
+    position: absolute; /* Position the icon absolutely */
+    top: 8px;
+    bottom: 8px;
+    right: 10px;
+  }
+
+  /* ////////////////////////////////////// Sidebar */
+  /* ////////////////////////////////////// DropDown */

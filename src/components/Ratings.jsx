@@ -1,6 +1,6 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
- 
+
 export default class Ratings extends React.Component {
   constructor() {
     super();
@@ -11,6 +11,7 @@ export default class Ratings extends React.Component {
   }
   onStarClick(nextValue, prevValue, name) {
     this.setState({rating: nextValue});
+    localStorage.setItem("rating", nextValue);
   }
  
   render() {

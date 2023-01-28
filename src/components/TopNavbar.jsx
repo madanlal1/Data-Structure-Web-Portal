@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/css/style.css';
+import {Outline} from '../assets/content/Outline';
 
 export default function TopNavbar() {
   return (
@@ -18,16 +19,17 @@ export default function TopNavbar() {
               id="nav-dropdown-dark-example"
               title="Topics"
               menuVariant="dark"
+              
             >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <div className="nav-dropdown-scroll">
+              { 
+                Outline.map(element => {
+                    return (
+                        <NavDropdown.Item id='_nav' href={`/tutorials/${element.link}`}>{element.topic}</NavDropdown.Item>
+                    )
+                })
+            }
+            </div>
             </NavDropdown>
             <Nav.Link href="/tutorials/data-structure" className='nav-link'>Tutorials</Nav.Link>
           </Nav>
