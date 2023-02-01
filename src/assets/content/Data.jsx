@@ -19,6 +19,11 @@ import dfs from '../thumbnails/dfs.gif';
 import pre_order from '../thumbnails/pre_order.gif'; 
 import in_order from '../thumbnails/in_order.gif'; 
 import post_order from '../thumbnails/post_order.gif'; 
+import insertion_sort from '../thumbnails/insertion_sort.gif'; 
+import quick_sort from '../thumbnails/quick_sort.gif'; 
+import selection_sort from '../thumbnails/selection_sort.gif'; 
+import merge_sort from '../thumbnails/merge_sort.gif'; 
+import recursion from '../thumbnails/recursion.gif'; 
 
 function copyToClipboard() {
     const codeSnippet = document.getElementById("code-snippet");
@@ -828,7 +833,7 @@ export const Data = [
         video : videolink,
         link : "recursion",
         title : "Recursion",
-        image : img,
+        image : recursion,
         content1 : <><b>Recursion is a programming technique where a function calls itself in order to solve a problem. In a recursive function, the problem is divided into one or more smaller subproblems, each of which is solved by calling the function again with modified input. Eventually, the function reaches a base case, which is a condition that stops the recursion, and the function returns a value or solution to the original problem. </b><br/>
 
         Here's an example of a simple recursive function in Java that calculates the factorial of a given number: <br/>
@@ -1696,7 +1701,7 @@ export const Data = [
         video : videolink,
         link : "merge-sort",
         title : "Merge Sort",
-        image : img,
+        image : merge_sort,
         content1 : <><b>Merge sort is a divide-and-conquer algorithm for sorting. It works by dividing an unsorted list into two sublists, recursively sorting the sublists, and then merging the sublists back into a single sorted list.</b> <br/><br/>
         
         The merge sort algorithm can be broken down into three main steps: <br/>
@@ -1762,7 +1767,7 @@ export const Data = [
         video : videolink,
         link : "quick-sort",
         title : "Quick Sort",
-        image : img,
+        image : quick_sort,
         content1 : <><b>QuickSort is a divide and conquer algorithm that is used to sort a collection of items. It's a widely used sorting algorithm because of its simplicity and its performance. The basic idea of the quicksort algorithm is to pick a "pivot" element from the array, partition the other elements into two sub-arrays, one containing all the elements less than the pivot, and the other containing all the elements greater than the pivot. Then it recursively sorts the two sub-arrays. </b> <br/><br/>
         
         Here's an example of the quicksort algorithm implemented in Java: <br/>
@@ -1810,7 +1815,7 @@ export const Data = [
         video : videolink,
         link : "selection-sort",
         title : "Selection Sort",
-        image : img,
+        image : selection_sort,
         content1 : <><b>Selection sort is a simple sorting algorithm that works by repeatedly selecting the smallest (or largest, depending on the implementation) element from the unsorted portion of the array and swapping it with the first element of the unsorted portion. This process is repeated for the remaining unsorted elements until the entire array is sorted. </b> <br/><br/>
         
         The selection sort algorithm can be broken down into two main steps: <br/> 
@@ -1846,7 +1851,7 @@ export const Data = [
         video : videolink,
         link : "insertion-sort",
         title : "Insertion Sort",
-        image : img,
+        image : insertion_sort,
         content1 : <><b>Insertion sort is a simple sorting algorithm that works by building up a sorted list one item at a time. It repeatedly takes the next element from the input list and inserts it into the correct position in the sorted list. </b> <br/><br/>
         
         The insertion sort algorithm can be broken down into two main steps: <br/> 
