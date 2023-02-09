@@ -21,10 +21,18 @@ h1 {
 #navContainer {
     margin: 0rem 0.5rem;
 }
+._nav {
+    color: white;
+    margin: 0rem;
+    margin-left: 10px;
+    text-decoration: none;
+}
 .nav-link {
     color: white;
     margin: 0rem;
     margin-left: 10px;
+    text-decoration: none;
+
 }
 
 #_navbar {

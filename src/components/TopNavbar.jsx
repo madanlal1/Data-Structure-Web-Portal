@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/css/style.css';
 import {Outline} from '../assets/content/Outline';
+import {Link} from 'react-router-dom';
 
 export default function TopNavbar() {
   return (
@@ -13,7 +14,7 @@ export default function TopNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
+            <Link to="/" className='nav-link'>Home</Link>
 
             <NavDropdown
               id="nav-dropdown-dark-example"
@@ -25,16 +26,16 @@ export default function TopNavbar() {
               { 
                 Outline.map(element => {
                     return (
-                        <NavDropdown.Item id='_nav' href={`/tutorials/${element.link}`}>{element.topic}</NavDropdown.Item>
+                        <Link className='nav-link' to={`/tutorials/${element.link}`}>{element.topic}</Link>
                     )
                 })
             }
             </div>
             </NavDropdown>
-            <Nav.Link href="/tutorials/data-structure" className='nav-link'>Tutorials</Nav.Link>
+            <Link to="/tutorials/data-structure" className='nav-link'>Tutorials</Link>
           </Nav>
-            <Nav.Link href="/feedback" className='nav-link, feedback'>Feedback</Nav.Link>
-            <Nav.Link href="/aboutus" className='nav-link, aboutUs'>AboutUS</Nav.Link>
+            <Link to="/feedback" className='nav-link feedback'>Feedback</Link>
+            <Link to="/aboutus" className='nav-link aboutUs'>AboutUS</Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
