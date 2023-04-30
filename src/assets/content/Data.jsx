@@ -24,6 +24,19 @@ import quick_sort from '../thumbnails/quick_sort.gif';
 import selection_sort from '../thumbnails/selection_sort.gif'; 
 import merge_sort from '../thumbnails/merge_sort.gif'; 
 import recursion from '../thumbnails/recursion.gif'; 
+import min_heap from '../thumbnails/min_heap.gif'; 
+import max_heap from '../thumbnails/max_heap.gif'; 
+import avl_tree from '../thumbnails/avl_tree.gif';
+import hashing from '../thumbnails/hashing.gif';
+import priority_queue from '../thumbnails/priority_queue.gif';
+import data_structure from '../thumbnails/data_structure.gif';
+
+import radix_sort from '../thumbnails/radix_sort.gif'; 
+import adjacency_list_graph from '../thumbnails/adjacency_list_graph.gif';
+import adjacency_Matrix_graph from '../thumbnails/adjacency_Matrix_graph.gif';
+import linear_probing_hashing from '../thumbnails/linear_probing_hashing.gif';
+import quardatic_probing_hashing from '../thumbnails/quardatic_probing_hashing.gif';
+import separate_chaining_hashing from '../thumbnails/separate_chaining_hashing.gif';
 
 function copyToClipboard() {
     const codeSnippet = document.getElementById("code-snippet");
@@ -47,7 +60,7 @@ export const Data = [
         video : videolink,
         link : "data-structure",
         title : "Data Structure",
-        image : img,
+        image : data_structure,
         content1 : <><b>A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks.</b> Here are some examples of common data structures: <br/><br/>
 
         <strong>Arrays:</strong> An array is a collection of items stored at contiguous memory locations. The items can be of the same type or of different types.<br/>
@@ -593,7 +606,7 @@ export const Data = [
         video : videolink,
         link : "priority-queue",
         title : "Priority Queue",
-        image : img,
+        image : priority_queue,
         content1 : <><b>A priority queue is a special type of queue where each element has a priority associated with it. In a priority queue, an element with a high priority is dequeued before an element with a low priority. If two elements have the same priority, they are served according to their order in the queue. It can also be implemented as a min heap or max heap, where the smallest or the largest element respectively is at the top of the heap. </b><br/>
 
         In Java, there is a pre-built PriorityQueue class in the java.util package that implements a priority queue using a min-heap. Here's an example of how you can use the PriorityQueue class to create a priority queue and add elements to it: <br/>
@@ -1032,7 +1045,7 @@ export const Data = [
         video : videolink,
         link : "avl-tree",
         title : "AVL Tree",
-        image : img,
+        image : avl_tree,
         content1 : <><b>An AVL tree (Adelson-Velsky and Landis tree) is a self-balancing binary search tree. It is a type of balanced tree where the difference in heights of the left and right subtrees of any node is at most one. </b><br/>
 
         The main idea behind an AVL tree is to maintain the height balance property in a binary search tree. The idea is to check whether the height of left subtree and right subtree of any node differs by more than 1, if so the tree is rotated to restore its balance. There are four different types of rotations in AVL tree that are used to balance the tree. <br/><br/>
@@ -1138,7 +1151,7 @@ export const Data = [
         video : videolink,
         link : "max-heap",
         title : "Max Heap",
-        image : img,
+        image : max_heap,
         content1 : <><b>Max heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be greater than or equal to the values of its children.</b><br/><br/>
 
         The main idea behind an AVL tree is to maintain the height balance property in a binary search tree. The idea is to check whether the height of left subtree and right subtree of any node differs by more than 1, if so the tree is rotated to restore its balance. There are four different types of rotations in AVL tree that are used to balance the tree. <br/><br/>
@@ -1244,7 +1257,7 @@ export const Data = [
         video : videolink,
         link : "min-heap",
         title : "Min Heap",
-        image : img,
+        image : min_heap,
         content1 : <><b>Min heap is a specialized tree-based data structure that satisfies the heap property, which states that the value of each node in the heap must be less than or equal to the values of its children.</b><br/><br/>
 
         One common way to implement a min heap in Java is to use an array to store the elements of the heap. The parent-child relationships between the elements can be determined using their indices in the array: for a node at index i, its left child is located at index 2i+1 and its right child is located at index 2i+2. <br/><br/>
@@ -1888,7 +1901,7 @@ export const Data = [
         video : videolink,
         link : "hashing",
         title : "Hashing",
-        image : img,
+        image : hashing,
         content1 : <><b>Hashing is a technique used to implement an associative array, a structure that can map keys to values. A hash function is used to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found or stored. The goal of a good hash function is to distribute the keys evenly across the array, so that on average each slot contains the same number of keys (a property known as a uniform distribution).  </b> <br/><br/>
         
         Here's an example of a simple hash function that can be used to store strings in a hash table: <br/>
@@ -1911,54 +1924,6 @@ export const Data = [
         In this example, the hash function iterates through each character in the input string and adds its ASCII value to a running total. The result is then taken modulo the table size to ensure that it falls within the range of valid indices for the hash table. <br/>
         It's important to note that hash functions can have collisions when two keys map to the same index, in order to avoid collisions some techniques can be used like open addressing, chaining, rehashing, etc. <br/>
         Hash tables are useful when you need to store and retrieve data quickly based on a key, they can also be used for other algorithms such as counting sort, in which the keys are transformed into integers between 0 and k-1 by a hash function, and then a counting algorithm is applied. <br/>
-       </>,
-    },
-    {
-        video : videolink,
-        link : "hash-tables",
-        title : "Hash Tables",
-        image : img,
-        content1 : <><b>A hash table is a data structure that is used to store key-value pairs, where the key is used to access the associated value. The basic idea behind a hash table is to use a function (called a hash function) to map keys to indices in an array. The array is called the table, and each cell in the table is called a slot. The key-value pair is then stored in the slot that corresponds to the index generated by the hash function. </b> <br/><br/>
-        
-        Java provides a built-in class called Hashtable that implements a hash table. Here is an example of how you might use a Hashtable in Java to map strings to integers: <br/>
-        
-        <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* import java.util.Hashtable;
-
-                public class HashtableExample {
-                public static void main(String[] args) {
-                    Hashtable<String, Integer> hashtable = new Hashtable<String, Integer>();
-                    
-                    // Add some key-value pairs to the hash table
-                    hashtable.put("Apple", 1);
-                    hashtable.put("Banana", 2);
-                    hashtable.put("Cherry", 3);
-                    
-                    // Retrieve the value for a specific key
-                    int bananaValue = hashtable.get("Banana");
-                    System.out.println("The value for the key 'Banana' is: " + bananaValue);
-                    
-                    // Check if a key is in the hash table
-                    if (hashtable.containsKey("Cherry")) {
-                    System.out.println("The key 'Cherry' is in the hash table.");
-                    }
-                    
-                    // Remove a key-value pair from the hash table
-                    hashtable.remove("Apple");
-                    System.out.println("The value for the key 'Apple' is: " + hashtable.get("Apple"));
-                }
-                } */}
-            </code></pre>
-        </div>
-        <br/>
-        The above example would output: <br/>
-
-        The value for the key 'Banana' is: 2 <br/>
-        The key 'Cherry' is in the hash table. <br/>
-        The value for the key 'Apple' is: null <br/><br/>
-        It is worth noting that in Java 8, the recommended class for key-value maps is HashMap, the Hashtable is considered an older class and more thread-safe but less performant. <br/>
        </>,
     },
     {

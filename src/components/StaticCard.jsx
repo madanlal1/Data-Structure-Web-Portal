@@ -4,13 +4,14 @@ import SearchIcon from '@material-ui/icons/Search';
 import '../assets/css/style.css';
 import {useState} from 'react';
 import { Search } from "@material-ui/icons";
+import pageNotFound from '../assets/images/pageNotFound.jpg';
 
 
 
 export default function StaticCard() {
 
   const [search, setSearch] = useState('');
-  console.log(search);
+  var found = false;
 
   return (
     <>
@@ -27,10 +28,20 @@ export default function StaticCard() {
           Data.filter(ele => ele.title.toLowerCase().match(search.toLocaleLowerCase())).map(element => 
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
               <ContentCard image={element.image} name={element.title} link={element.link} />
+              {found = true}
             </div>
           )
         }
       </div>
+      
+        {found == false ? 
+        <div>
+          <br/>
+        <img src={pageNotFound} alt="Package Not Found!" width="600px" style={{justifyContent:'center', display:'grid', marginLeft:'auto', marginRight:'auto'}}/>
+      </div>
+       : 
+       null}
+      
     </>
   );
 }

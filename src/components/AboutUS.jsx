@@ -31,7 +31,7 @@ export default function AboutUS() {
                         <h4>Software Engineer</h4><br/>
                         <p><strong><i>"Dream big, stay positive, work <br/> hard and enjoy the journey."</i></strong></p>
                         <div>
-                            <a target='_blank' href="/">
+                            <a target='_blank' href="https://www.youtube.com/@visualhow/videos">
                                 <YouTubeIcon style={{fontSize:"40px", margin:'5px', color:'#c4302b'}}/>
                             </a>
                             <a target='_blank' href="https://github.com/madanlal1">

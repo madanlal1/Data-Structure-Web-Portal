@@ -45,7 +45,6 @@ export default function App() {
       <Route path="/tutorials/selection-sort" element={<Tutorials/>}/>
       <Route path="/tutorials/insertion-sort" element={<Tutorials/>}/>
       <Route path="/tutorials/hashing" element={<Tutorials/>}/>
-      <Route path="/tutorials/hash-tables" element={<Tutorials/>}/>
       <Route path="/tutorials/graph" element={<Tutorials/>}/>
       <Route path="/tutorials/dfs" element={<Tutorials/>}/>
       <Route path="/tutorials/bfs" element={<Tutorials/>}/> */}
