@@ -30,7 +30,13 @@ export const Outline = [
     { index : 28, link : "selection-sort", topic : "Selection Sort"},
     { index : 29, link : "insertion-sort", topic : "Insertion Sort"},
     { index : 30, link : "hashing", topic : "Hashing"},
-    { index : 32, link : "graph", topic : "Graph"},
-    { index : 33, link : "dfs", topic : "DFS"},
-    { index : 34, link : "bfs", topic : "BFS"}
+    { index : 31, link : "graph", topic : "Graph"},
+    { index : 32, link : "dfs", topic : "DFS"},
+    { index : 33, link : "bfs", topic : "BFS"},
+    { index : 34, link : "radix-sort", topic : "Radix Sort"},
+    { index : 35, link : "adjacency-list", topic : "Adjacency List"},
+    { index : 36, link : "adjacency-matrix", topic : "Adjacency Matrix"},
+    { index : 37, link : "linear-probing", topic : "Linear Probing"},
+    { index : 38, link : "quadratic-probing", topic : "Quadratic Probing"},
+    { index : 39, link : "separate-chaining", topic : "Separate Chaining"},
 ];

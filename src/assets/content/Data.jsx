@@ -1,6 +1,5 @@
 import '../css/style.css';
-import videolink from '../videos/array.mp4';
-// import img from '../images/pic.jpg';
+
 import img from '../images/first.gif';
 import _1darray from '../thumbnails/_1darray.gif'; 
 import _2darray from '../thumbnails/_2darray.gif'; 
@@ -30,38 +29,78 @@ import avl_tree from '../thumbnails/avl_tree.gif';
 import hashing from '../thumbnails/hashing.gif';
 import priority_queue from '../thumbnails/priority_queue.gif';
 import data_structure from '../thumbnails/data_structure.gif';
-
 import radix_sort from '../thumbnails/radix_sort.gif'; 
 import adjacency_list_graph from '../thumbnails/adjacency_list_graph.gif';
 import adjacency_Matrix_graph from '../thumbnails/adjacency_Matrix_graph.gif';
 import linear_probing_hashing from '../thumbnails/linear_probing_hashing.gif';
 import quardatic_probing_hashing from '../thumbnails/quardatic_probing_hashing.gif';
 import separate_chaining_hashing from '../thumbnails/separate_chaining_hashing.gif';
+import array from '../thumbnails/array.gif';
+import linkedlist from '../thumbnails/linkedlist.gif';
+import graph from '../thumbnails/graph.gif';
+import spaceComplexity from '../thumbnails/space_complexity.gif';
+import timeComplexity from '../thumbnails/time_complexity.gif';
 
-function copyToClipboard() {
-    const codeSnippet = document.getElementById("code-snippet");
-    const button = document.getElementById("clipboard-button");
-    
-    // console.log("clicked on copy", codeSnippet.innerText);
-    // alert("clicked on copy", codeSnippet.innerText);
-    // Select the text in the code snippet
-    codeSnippet.select();
-    
-    // Copy the selected text to the clipboard
-    document.execCommand("copy");
-    
-    // Change the button text to indicate that the code has been copied
-    button.textContent = "Copied!";
-}
 
+const _datastructure = 'bzSKawdzbCw';
+const _1d_array = 'lIXV_hHdokg';
+const _2d_array = 'IVmZUiY74DQ';
+const _singlyLinkedList = 'OjhiiIea8X8';
+const _circularSinglyLinkedList = 'Hbw3tpVlv5A';
+const _doublyLinkedList = 'vZ39fSso49g';
+const _circularDoublyLinkedList = 'DrATf9rtfoE';
+const _queue = 'agQQyKd0HBQ';
+const _priorityQueue = '-D6JYBrVrhs';
+const _stack = '-qsKQVpGPKs';
+const _recursion = 'ucQe21ha2K8';
+const _tree = 'RASniJbiWaE';
+const _binaryTree = '_ITudD2Cz9M';
+const _binarySearchTree = 'ymGjUOiR8Jg';
+const _avlTree = 'xGIEbjGyPm0';
+const _maxHeap = 'uU0iWaVxMgc';
+const _minHeap = 'AFPzC2RJOMk';
+const _preOrder = 'gLx7Px7IEzg';
+const _inOrder = 'ne5oOmYdWGw';
+const _postOrder = 'a8kmbuNm8Uo';
+const _bubbleSort = 'Twpo1-8--6M';
+const _quickSort = '4vc5OYLMcYE';
+const _selectionSort = 'ouAHgfPGdEg';
+const _insertionSort = 'g7nYRpfP7lg';
+const _mergeSort = 'spVhtO_IcGg';
+const _radixSort = 'Om4BljCs_qE';
+const _hashing = 'VeYKEMY2F9k';
+const _linearProbing = '98Y0UDZ9vvs';
+const _quadraticProbing = '0CFJAkpnhBg';
+const _separateChaining = 'LRtKQdsJC3o';
+const _adjacencyList = 'sf17xiYfLcM';
+const _adjacencyMatrix = 'xNaYt6d1RI4';
+const _bfs = 'QUfEOCOEKkc';
+const _dfs = '3_NMDJkmvLo';
+const _array = 'HQUVGMjzFwI';
+const _linkedlist = 'DRHyY0Ihu90';
+const _sorting = 'Boxjvcs1mzo';
+const _graph = 'uKebVkM77ww';
+const _timeComplexity = 'IA8On-kfxYo';
+const _spaceComplexity = 'izZRQkC8BNU';
+
+
+function copyToClipboard(id = 'code-snippet') {
+    console.log("id >> ",id)
+    const codeSnippet = document.querySelector(`#${id}`).innerText;
+    navigator.clipboard.writeText(codeSnippet)
+      .then(() => alert('Code snippet copied to clipboard!'))
+      .catch(() => alert('Failed to copy code snippet to clipboard.'));
+  }
+
+<h1 id='code-snippet'>HELLO</h1>
 
 export const Data = [
     {
-        video : videolink,
+        video : _datastructure,
         link : "data-structure",
         title : "Data Structure",
         image : data_structure,
-        content1 : <><b>A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks.</b> Here are some examples of common data structures: <br/><br/>
+        content1 : <><b>A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks.</b><br/><br/> <b>Here are some examples of common data structures: </b><br/><br/>
 
         <strong>Arrays:</strong> An array is a collection of items stored at contiguous memory locations. The items can be of the same type or of different types.<br/>
         
@@ -80,62 +119,62 @@ export const Data = [
         These are just a few examples of common data structures. There are many others as well, each with its own set of characteristics and uses.</>,
     },
     {
-        video : videolink,
+        video : _array,
         link : "array",
         title : "Array",
-        image : img,
-        content1 : <><b>An array is a data structure that stores a collection of elements, which are accessed by their position or index. Each element in the array is identified by an index, which is an integer value that ranges from 0 to the size of the array minus 1.</b><br/><br/>
+        image : array,
+        content1 : <><b>An array is a data structure that stores a collection of elements, which are accessed by their position or index. Each element in the array is identified by an index, which is an integer value that ranges from 0 to the size of the array minus 1.</b><br/><br/><br/>
 
-        Here's an example of an array of integers in Java:<br/>
+        Here's an example of an array of integers in Java:<br/><br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* int[] numbers = {1, 2, 3, 4, 5}; <br/> */}
-                System.out.println(numbers[2]); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet1')}>Copy</button>
+            <pre><code id="code-snippet1">
+                {`int[] numbers = {1, 2, 3, 4, 5}; 
+                System.out.println(numbers[2]); `}
             </code></pre>
         </div>
         <br/>
             In this example, numbers is an array of integers with 5 elements. Like the examples before, we can access individual elements of the array by using square brackets and the index of the element we want to access. <br/>
             You can also create an array by specifying the size and type, like this:
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                int[] numbers = new int[5]; <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet2')}>Copy</button>
+            <pre><code id="code-snippet2">
+                {`int[] numbers = new int[5]; `}
             </code></pre>
         </div>
         <br/>
         This creates an empty array of integers with a length of 5, which means it can store 5 elements. You can then add elements to the array by using the assignment operator and specifying the index, like this: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                numbers[0] = 1; <br/>
-                numbers[1] = 2; <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet3')}>Copy</button>
+            <pre><code id="code-snippet3">
+                {`numbers[0] = 1; 
+                numbers[1] = 2; `}
             </code></pre>
         </div>
         <br/>
         You can also use a loop to initialize the array
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* for (int i = 0; i < numbers.length; i++) { <br/>
-                    numbers[i] = i; <br/>
-                } */}
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet4')}>Copy</button>
+            <pre><code id="code-snippet4">
+                {`for (int i = 0; i < numbers.length; i++) { 
+                    numbers[i] = i; 
+                }`}
             </code></pre>
         </div>
         <br/>
         Java also provides a class called ArrayList which allows you to create resizable array in a more dynamic way, where you can add and remove elements to the array dynamically, instead of having a fixed size like normal arrays. Here is an example of how to use an ArrayList: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-            import java.util.ArrayList; <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet5')}>Copy</button>
+            <pre><code id="code-snippet5">
+            {`import java.util.ArrayList; 
 
-            {/* ArrayList<Integer> numbers = new ArrayList<Integer>(); */} <br/>
-            uncomment array list above... <br/>
-            numbers.add(1); <br/>
-            numbers.add(2); <br/>
-            numbers.add(3); <br/>
-            numbers.remove(1); // removes the element at index 1 
+            ArrayList<Integer> numbers = new ArrayList<Integer>(); 
+            uncomment array list above... 
+            numbers.add(1); 
+            numbers.add(2); 
+            numbers.add(3); 
+            numbers.remove(1); // removes the element at index 1 `}
             </code></pre>
         </div>
         <br/>
@@ -144,7 +183,7 @@ export const Data = [
        </>
     },
     {
-        video : videolink,
+        video : _1d_array,
         link : "1d-array",
         title : "1D Array",
         image : _1darray,
@@ -153,32 +192,35 @@ export const Data = [
         In Java, a 1D array can be declared and initialized in several ways:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                // Declare and initialize an array using the array initializer <br/>
-                {/* int[] numbers = {1, 2, 3, 4, 5}; <br/><br/> */}
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet6')}>Copy</button>
+            <pre>
+                <code id="code-snippet6">
+                    
+                {`// Declare and initialize an array using the array initializer
+                int[] numbers = {1, 2, 3, 4, 5};
 
-                // Declare an array and then initialize its elements individually <br/>
-                int[] numbers = new int[5]; <br/>
-                numbers[0] = 1; <br/>
-                numbers[1] = 2; <br/>
-                numbers[2] = 3; <br/>
-                numbers[3] = 4; <br/>
-                numbers[4] = 5; <br/><br/>
+                // Declare an array and then initialize its elements individually
+                int[] numbers = new int[5];
+                numbers[0] = 1;
+                numbers[1] = 2;
+                numbers[2] = 3;
+                numbers[3] = 4;
+                numbers[4] = 5;
 
-                // Declare and initialize an array using a for loop <br/>
-                int[] numbers = new int[5]; <br/>
-                {/* for (int i = 0; i < numbers.length; i++) { <br/> */}
-                    numbers[i] = i; <br/>
-                {/* } <br/> */}
+                // Declare and initialize an array using a for loop
+                int[] numbers = new int[5];
+                for (int i = 0; i < numbers.length; i++) {
+                    numbers[i] = i;
+                }`}
+                
             </code></pre>
         </div>
         <br/>
         In these examples, numbers is a 1D array of integers with 5 elements. As previously mentioned, you can access individual elements of the array by using square brackets and the index of the element you want to access, like this: 
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                System.out.println(numbers[2]); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet7')}>Copy</button>
+            <pre><code id="code-snippet7">
+                {`System.out.println(numbers[2]);`}
             </code></pre>
         </div>
         <br/>
@@ -186,9 +228,9 @@ export const Data = [
         1D arrays are useful when you need to store a collection of similar elements that can be accessed by an integer index, such as a list of student grades, a list of temperatures, or a list of stock prices. They are also useful as function arguments, so you can pass an array of values to a function and manipulate them inside that function. <br/>
         It's worth noting that there's also another way of creating 1D array in Java through the use of Array class, for example: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                int[] numbers = Array.of(1, 2, 3, 4, 5); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet8')}>Copy</button>
+            <pre><code id="code-snippet8">
+                {`int[] numbers = Array.of(1, 2, 3, 4, 5); <br/>`}
             </code></pre>
         </div>
         <br/>
@@ -196,7 +238,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _2d_array,
         link : "2d-array",
         title : "2D Array",
         image : _2darray,
@@ -205,38 +247,38 @@ export const Data = [
         In Java, a 2D array is actually an array of arrays, and can be declared and initialized in several ways:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                // Declare and initialize a 2D array using the array initializer <br/>
-                {/* int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; <br/><br/> */}
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet9')}>Copy</button>
+            <pre><code id="code-snippet9">
+                {`// Declare and initialize a 2D array using the array initializer
+                {/* int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; */}
 
-                // Declare a 2D array and then initialize its elements individually <br/>
-                int[][] matrix = new int[3][3]; <br/>
-                matrix[0][0] = 1; <br/>
-                matrix[0][1] = 2; <br/>
-                matrix[0][2] = 3; <br/>
-                matrix[1][0] = 4; <br/>
-                matrix[1][1] = 5; <br/>
-                matrix[1][2] = 6; <br/>
-                matrix[2][0] = 7; <br/>
-                matrix[2][1] = 8; <br/>
-                matrix[2][2] = 9; <br/><br/>
+                // Declare a 2D array and then initialize its elements individually
+                int[][] matrix = new int[3][3];
+                matrix[0][0] = 1;
+                matrix[0][1] = 2;
+                matrix[0][2] = 3;
+                matrix[1][0] = 4;
+                matrix[1][1] = 5;
+                matrix[1][2] = 6;
+                matrix[2][0] = 7;
+                matrix[2][1] = 8;
+                matrix[2][2] = 9;
  
-                // Declare and initialize a 2D array using nested for loops <br/>
-                int[][] matrix = new int[3][3]; <br/>
-                {/* for (int i = 0; i < matrix.length; i++) { <br/>
-                    for (int j = 0; j < matrix[i].length; j++) { <br/>
-                        matrix[i][j] = i * 3 + j + 1; <br/>
-                    } <br/>
-                } */}
+                // Declare and initialize a 2D array using nested for loops
+                int[][] matrix = new int[3][3];
+                for (int i = 0; i < matrix.length; i++) {
+                    for (int j = 0; j < matrix[i].length; j++) {
+                        matrix[i][j] = i * 3 + j + 1;
+                    }
+                }`}
             </code></pre>
         </div>
         <br/>
         In these examples, matrix is a 2D array of integers with 3 rows and 3 columns. You can access individual elements of the array by using two sets of square brackets, one for the row and one for the column, like this: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-            System.out.println(matrix[1][1]); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet10')}>Copy</button>
+            <pre><code id="code-snippet10">
+            {`System.out.println(matrix[1][1]); <br/>`}
             </code></pre>
         </div>
         <br/>
@@ -244,9 +286,9 @@ export const Data = [
         2D arrays are useful for storing data that has a logical structure, like a table of data, a chess board, a map, etc, They also can be used to store images and other types of data that have a 2D structure. <br/>
         It's worth mentioning that, like with 1D arrays, you can use Array class introduced in Java 9 to create 2D arrays: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-            int[][] matrix = Array.of(Array.of(1, 2, 3), Array.of(4, 5, 6), Array.of(7, 8, 9)); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet11')}>Copy</button>
+            <pre><code id="code-snippet11">
+            {`int[][] matrix = Array.of(Array.of(1, 2, 3), Array.of(4, 5, 6), Array.of(7, 8, 9)); `}
             </code></pre>
         </div>
         <br/>
@@ -254,26 +296,26 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _linkedlist,
         link : "linkedlist",
         title : "Linked List",
-        image : img,
+        image : linkedlist,
         content1 : <><b>A linked list is a data structure that stores a collection of elements, called nodes, in which each node points to the next node in the list. It is a dynamic data structure, meaning that the number of elements in a linked list can change during the program's execution.</b><br/><br/>
 
         In Java, you can use a class and object-oriented programming to create a linked list. You can create a class called Node that will represent a node in the linked list. The class would typically have two fields: data, which stores the value of the element, and next, which stores a reference to the next node in the list.<br/><br/>
         Here's an example of how you might declare a basic linked list node in Java:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                class Node { <br/>
-                    // int data; <br/>
-                    // Node next; <br/>
-                    // public Node(int data) { <br/>
-                    //     this.data = data; <br/>
-                    //     this.next = null; <br/>
-                    // } <br/>
-                } <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet12')}>Copy</button>
+            <pre><code id="code-snippet12">
+                {`class Node {
+                    int data;
+                    Node next;
+                    public Node(int data) {
+                        this.data = data;
+                        this.next = null;
+                    }
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -281,13 +323,13 @@ export const Data = [
         A linked list is typically composed of multiple nodes that are linked together, with each node pointing to the next node in the list. The last node in the list points to null indicating the end of the list. <br/><br/>
         Here is an example of how you might create a basic linked list in Java: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                Node head = new Node(10); <br/>
-                Node second = new Node(20); <br/>
-                Node third = new Node(30); <br/>
-                head.next = second; <br/>
-                second.next = third; <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet13')}>Copy</button>
+            <pre><code id="code-snippet13">
+                {`Node head = new Node(10);
+                Node second = new Node(20);
+                Node third = new Node(30);
+                head.next = second;
+                second.next = third;`}
             </code></pre>
         </div>
         <br/>
@@ -296,7 +338,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _singlyLinkedList,
         link : "singly-linkedlist",
         title : "Singly Linked List",
         image : singly_linkedlist,
@@ -305,73 +347,73 @@ export const Data = [
         In Java, you can implement a singly linked list using a class that defines a Node and a LinkedList class. Here's an example of a simple singly linked list implementation in Java:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node { <br/>
-                    int data; <br/>
-                    Node next; <br/><br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet14')}>Copy</button>
+            <pre><code id="code-snippet14">
+                {`class Node { 
+                    int data; 
+                    Node next; 
 
-                    public Node(int data) { <br/>
-                        this.data = data; <br/>
-                    } <br/>
-                } <br/>
+                    public Node(int data) { 
+                        this.data = data; 
+                    } 
+                } 
  
-                class LinkedList { <br/>
-                    Node head; <br/><br/>
+                class LinkedList { 
+                    Node head; 
 
-                    public void append(int data) { <br/>
-                        if (head == null) { <br/>
-                            head = new Node(data); <br/>
-                            return; <br/>
-                        } <br/><br/>
+                    public void append(int data) { 
+                        if (head == null) { 
+                            head = new Node(data); 
+                            return; 
+                        } 
 
-                        Node current = head; <br/>
-                        while (current.next != null) { <br/>
-                            current = current.next; <br/>
-                        } <br/>
+                        Node current = head; 
+                        while (current.next != null) { 
+                            current = current.next; 
+                        } 
 
-                        current.next = new Node(data); <br/>
-                    } <br/><br/>
+                        current.next = new Node(data); 
+                    } 
 
-                    public void prepend(int data) { <br/>
-                        Node newHead = new Node(data); <br/>
-                        newHead.next = head; <br/>
-                        head = newHead; <br/>
-                    } <br/><br/>
+                    public void prepend(int data) { 
+                        Node newHead = new Node(data); 
+                        newHead.next = head; 
+                        head = newHead; 
+                    } 
 
-                    public void delete(int data) { <br/>
-                        if (head == null) { <br/>
-                            return; <br/>
-                        } <br/><br/>
+                    public void delete(int data) { 
+                        if (head == null) { 
+                            return; 
+                        } 
 
-                        if (head.data == data) { <br/>
-                            head = head.next; <br/>
-                            return; <br/>
-                        } <br/><br/>
+                        if (head.data == data) { 
+                            head = head.next; 
+                            return; 
+                        } 
 
-                        Node current = head; <br/>
-                        while (current.next != null) { <br/>
-                            if (current.next.data == data) { <br/>
-                                current.next = current.next.next; <br/>
-                                return; <br/>
-                            } <br/>
-                            current = current.next; <br/>
-                        } <br/>
-                    } <br/>
-                }  */}
+                        Node current = head; 
+                        while (current.next != null) { 
+                            if (current.next.data == data) { 
+                                current.next = current.next.next; 
+                                return; 
+                            } 
+                            current = current.next; 
+                        } 
+                    } 
+                } `}
             </code></pre>
         </div>
         <br/>
         This implementation includes basic operations like insertions(append and prepend) and deletion of an element in the linked list. <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-            LinkedList list = new LinkedList(); <br/>
-            list.append(1); <br/>
-            list.append(2); <br/>
-            list.append(3); <br/>
-            list.prepend(0); <br/>
-            list.delete(2); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet15')}>Copy</button>
+            <pre><code id="code-snippet15">
+            {`LinkedList list = new LinkedList(); 
+            list.append(1); 
+            list.append(2); 
+            list.append(3); 
+            list.prepend(0); 
+            list.delete(2); `}
             </code></pre>
         </div>
         <br/>
@@ -380,7 +422,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _doublyLinkedList,
         link : "doubly-linkedlist",
         title : "Doubly Linked List",
         image : doubly_linkedlist,
@@ -389,65 +431,65 @@ export const Data = [
         Here's an example of a simple doubly linked list implementation in Java:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node { <br/>
-                    int data; <br/>
-                    Node next; <br/>
-                    Node prev; <br/><br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet16')}>Copy</button>
+            <pre><code id="code-snippet16">
+                {`class Node { 
+                    int data; 
+                    Node next; 
+                    Node prev; 
                 
-                    public Node(int data) { <br/>
-                        this.data = data; <br/>
-                    } <br/>
-                } <br/><br/>
+                    public Node(int data) { 
+                        this.data = data; 
+                    } 
+                } 
 
-                class DoublyLinkedList { <br/>
-                    Node head; <br/>
-                    Node tail; <br/><br/>
+                class DoublyLinkedList { 
+                    Node head; 
+                    Node tail; 
                  
-                    public void append(int data) { <br/>
-                        Node newNode = new Node(data); <br/>
-                        if (head == null) { <br/>
-                            head = newNode; <br/>
-                            tail = newNode; <br/>
-                            return; <br/>
-                        } <br/>
-                        tail.next = newNode; <br/>
-                        newNode.prev = tail; <br/>
-                        tail = newNode; <br/>
-                    } <br/><br/>
+                    public void append(int data) { 
+                        Node newNode = new Node(data); 
+                        if (head == null) { 
+                            head = newNode; 
+                            tail = newNode; 
+                            return; 
+                        } 
+                        tail.next = newNode; 
+                        newNode.prev = tail; 
+                        tail = newNode; 
+                    } 
 
-                    public void prepend(int data) { <br/>
-                        Node newNode = new Node(data); <br/>
-                        newNode.next = head; <br/>
-                        head.prev = newNode; <br/>
-                        head = newNode; <br/>
-                    } <br/><br/>
+                    public void prepend(int data) { 
+                        Node newNode = new Node(data); 
+                        newNode.next = head; 
+                        head.prev = newNode; 
+                        head = newNode; 
+                    } 
                     
-                    public void delete(int data) { <br/>
-                        if (head == null) { <br/>
-                            return; <br/>
-                        } <br/>
-                        if (head.data == data) { <br/>
-                            head = head.next; <br/>
-                            head.prev = null; <br/>
-                            return; <br/>
-                        } <br/>
-                        Node current = head; <br/>
-                        while (current != null) { <br/>
-                            if (current.data == data) { <br/>
-                                current.prev.next = current.next; <br/>
-                                if (current.next != null) { <br/>
-                                    current.next.prev = current.prev; <br/>
-                                } else { <br/>
-                                    tail = current.prev; <br/>
-                                } <br/>
-                                return; <br/>
-                            } <br/>
-                            current = current.next; <br/>
-                        } <br/>
-                    } <br/>
-                }   */}
+                    public void delete(int data) { 
+                        if (head == null) { 
+                            return; 
+                        } 
+                        if (head.data == data) { 
+                            head = head.next; 
+                            head.prev = null; 
+                            return; 
+                        } 
+                        Node current = head; 
+                        while (current != null) { 
+                            if (current.data == data) { 
+                                current.prev.next = current.next; 
+                                if (current.next != null) { 
+                                    current.next.prev = current.prev; 
+                                } else { 
+                                    tail = current.prev; 
+                                } 
+                                return; 
+                            } 
+                            current = current.next; 
+                        } 
+                    } 
+                }  `}
             </code></pre>
         </div>
         <br/>
@@ -457,7 +499,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _circularSinglyLinkedList,
         link : "circular-singly-linkedlist",
         title : "Circular Singly Linked List",
         image : circular_singly_linkedlist,
@@ -466,38 +508,38 @@ export const Data = [
         Here's an example of a simple circular singly linked list implementation in Java:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node { <br/>
-                    int data; <br/>
-                    Node next; <br/><br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet17')}>Copy</button>
+            <pre><code id="code-snippet17">
+                {`class Node { 
+                    int data; 
+                    Node next; 
 
-                    public Node(int data) { <br/>
-                        this.data = data; <br/>
-                    } <br/>
-                } <br/><br/>
+                    public Node(int data) { 
+                        this.data = data; 
+                    } 
+                } 
 
-                class CircularLinkedList { <br/>
-                    Node head; <br/><br/>
+                class CircularLinkedList { 
+                    Node head; 
 
-                    public void append(int data) { <br/>
-                        if (head == null) { <br/>
-                            head = new Node(data); <br/>
-                            head.next = head; <br/>
-                            return; <br/>
-                        } <br/><br/>
+                    public void append(int data) { 
+                        if (head == null) { 
+                            head = new Node(data); 
+                            head.next = head; 
+                            return; 
+                        } 
 
-                        Node current = head; <br/>
-                        while (current.next != head) { <br/>
-                            current = current.next; <br/>
-                        } <br/><br/>
+                        Node current = head; 
+                        while (current.next != head) { 
+                            current = current.next; 
+                        } 
 
-                        Node newNode = new Node(data); <br/>
-                        newNode.next = head; <br/>
-                        current.next = newNode; <br/>
-                    } <br/>
+                        Node newNode = new Node(data); 
+                        newNode.next = head; 
+                        current.next = newNode; 
+                    } 
                     // the other methods like delete, insert, etc can be implemented similar to the singly linked list 
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -507,7 +549,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _circularDoublyLinkedList,
         link : "circular-doubly-linkedlist",
         title : "Circular Doubly Linked List",
         image : circular_doubly_linkedlist,
@@ -516,41 +558,41 @@ export const Data = [
         Here's an example of a simple circular doubly linked list implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node { <br/>
-                    int data; <br/>
-                    Node next; <br/>
-                    Node prev; <br/><br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet18')}>Copy</button>
+            <pre><code id="code-snippet18">
+                {`class Node { 
+                    int data; 
+                    Node next; 
+                    Node prev; 
 
-                    public Node(int data) { <br/>
-                        this.data = data; <br/>
-                    } <br/>
-                } <br/><br/>
+                    public Node(int data) { 
+                        this.data = data; 
+                    } 
+                } 
 
-                class CircularDoublyLinkedList { <br/>
-                    Node head; <br/><br/>
+                class CircularDoublyLinkedList { 
+                    Node head; 
                 
-                    public void append(int data) { <br/>
-                        Node newNode = new Node(data); <br/>
-                        if (head == null) { <br/>
-                            head = newNode; <br/>
-                            head.next = head; <br/>
-                            head.prev = head; <br/>
-                            return; <br/>
-                        } <br/>
-                        newNode.prev = head.prev; <br/>
-                        newNode.next = head; <br/>
-                        head.prev.next = newNode; <br/>
-                        head.prev = newNode; <br/>
-                    }  */}
+                    public void append(int data) { 
+                        Node newNode = new Node(data); 
+                        if (head == null) { 
+                            head = newNode; 
+                            head.next = head; 
+                            head.prev = head; 
+                            return; 
+                        } 
+                        newNode.prev = head.prev; 
+                        newNode.next = head; 
+                        head.prev.next = newNode; 
+                        head.prev = newNode; 
+                    } `}
             </code></pre>
         </div>
         <br/>
        </>,
     },
     {
-        video : videolink,
+        video : _queue,
         link : "queue",
         title : "Queue",
         image : queue,
@@ -560,41 +602,41 @@ export const Data = [
         Here's an example of a simple queue implementation using an array in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Queue { <br/>
-                    int[] items; <br/>
-                    int head; <br/>
-                    int tail; <br/><br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet19')}>Copy</button>
+            <pre><code id="code-snippet19">
+               {` class Queue { 
+                    int[] items; 
+                    int head; 
+                    int tail; 
 
-                    public Queue(int capacity) { <br/>
-                        items = new int[capacity]; <br/>
-                    } <br/><br/>
+                    public Queue(int capacity) { 
+                        items = new int[capacity]; 
+                    } 
 
-                    public void enqueue(int item) { <br/>
-                        if (tail == items.length) { <br/>
-                            if (head == 0) { <br/>
-                                System.out.println("Queue is full"); <br/>
-                                return; <br/>
-                            } <br/>
+                    public void enqueue(int item) { 
+                        if (tail == items.length) { 
+                            if (head == 0) { 
+                                System.out.println("Queue is full"); 
+                                return; 
+                            } 
                             // shift elements to the left to remove the head 
-                            for (int i = head; i < tail; i++) { <br/>
-                                items[i - head] = items[i]; <br/>
-                            } <br/>
-                            tail = tail - head; <br/>
-                            head = 0; <br/>
-                        } <br/>
-                        items[tail++] = item; <br/>
-                    } <br/><br/>
+                            for (int i = head; i < tail; i++) { 
+                                items[i - head] = items[i]; 
+                            } 
+                            tail = tail - head; 
+                            head = 0; 
+                        } 
+                        items[tail++] = item; 
+                    } 
 
-                    public int dequeue() { <br/>
-                        if (head == tail) { <br/>
-                            System.out.println("Queue is empty"); <br/>
-                            return -1; <br/>
-                        } <br/>
-                        return items[head++]; <br/>
-                    } <br/>
-                }  */}
+                    public int dequeue() { 
+                        if (head == tail) { 
+                            System.out.println("Queue is empty"); 
+                            return -1; 
+                        } 
+                        return items[head++]; 
+                    } 
+                } `}
             </code></pre>
         </div>
         <br/>
@@ -603,7 +645,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _priorityQueue,
         link : "priority-queue",
         title : "Priority Queue",
         image : priority_queue,
@@ -612,25 +654,25 @@ export const Data = [
         In Java, there is a pre-built PriorityQueue class in the java.util package that implements a priority queue using a min-heap. Here's an example of how you can use the PriorityQueue class to create a priority queue and add elements to it: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* PriorityQueue<Integer> pq = new PriorityQueue<Integer>(); <br/> */}
-                pq.add(3); <br/>
-                pq.add(1); <br/>
-                pq.add(2); <br/>
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet20')}>Copy</button>
+            <pre><code id="code-snippet20">
+                {`PriorityQueue<Integer> pq = new PriorityQueue<Integer>(); 
+                pq.add(3); 
+                pq.add(1); 
+                pq.add(2); `}
             </code></pre>
         </div>
         <br/>
         In this example, a priority queue is created, and three elements are added to it. Since the PriorityQueue class uses a min-heap, the element with the lowest value will be at the head of the queue. When you call poll() function to dequeue element it will remove the element which has the lowest priority. <br/><br/>
         You can also use a Comparator while creating a priority queue to define the priority of elements in the queue: <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* PriorityQueue<Integer> pq = new PriorityQueue<Integer>(new Comparator<Integer>() { 
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet21')}>Copy</button>
+            <pre><code id="code-snippet21">
+                {`PriorityQueue<Integer> pq = new PriorityQueue<Integer>(new Comparator<Integer>() { 
                     public int compare(Integer a, Integer b) { 
                     return b - a; 
                 } 
-            });  */}
+            }); `}
             </code></pre>
         </div>
         <br/>
@@ -640,7 +682,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _stack,
         link : "stack",
         title : "Stack",
         image : stack,
@@ -650,9 +692,9 @@ export const Data = [
         Here's an example of a simple stack implementation using an array in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Stack {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet22')}>Copy</button>
+            <pre><code id="code-snippet22">
+                {`class Stack {
                     int[] items;
                     int top;
 
@@ -675,7 +717,7 @@ export const Data = [
                         }
                         return items[--top];
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -685,10 +727,10 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _timeComplexity,
         link : "time-complexity",
         title : "Time Complexity",
-        image : img,
+        image : timeComplexity,
         content1 : <><b>Time complexity is a measure of how long an algorithm takes to run as a function of the size of the input. It's often represented using big O notation, which expresses the upper bound of the running time of an algorithm. </b><br/>
 
         The time complexity of an algorithm can be determined by counting the number of basic operations the algorithm performs. For example, if an algorithm requires a constant number of operations regardless of the size of the input, its time complexity is O(1). If the number of operations grows linearly with the size of the input, the time complexity is O(n), where n is the size of the input. <br/><br/>
@@ -696,25 +738,25 @@ export const Data = [
         <b>Linear search:</b> The time complexity of linear search algorithm is O(n), where n is the size of the input array. This is because in the worst case, the algorithm has to iterate through the entire array to find the element. Here's an example of linear search in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static int linearSearch(int[] array, int key) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet23')}>Copy</button>
+            <pre><code id="code-snippet23">
+                {`public static int linearSearch(int[] array, int key) {
                     for (int i = 0; i < array.length; i++) {
                         if (array[i] == key) {
                             return i;
                         }
                     }
                     return -1;
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         <b>Binary search: </b> The time complexity of binary search algorithm is O(log n), where n is the size of the input array. This is because in each step of the algorithm, it eliminates half of the remaining possibilities. Here's an example of binary search in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static int binarySearch(int[] array, int key) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet24')}>Copy</button>
+            <pre><code id="code-snippet24">
+                {`public static int binarySearch(int[] array, int key) {
                     int left = 0;
                     int right = array.length - 1;
                     while (left <= right) {
@@ -728,16 +770,16 @@ export const Data = [
                         }
                     }
                     return -1;
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         <b>Bubble sort:  </b> The time complexity of bubble sort algorithm is O(n^2) in the worst case and average case. This is because for each element, the algorithm has to compare it with all other elements and swap them if necessary. Here's an example of bubble sort in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void bubbleSort(int[] array) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet25')}>Copy</button>
+            <pre><code id="code-snippet25">
+                {`public static void bubbleSort(int[] array) {
                     for (int i = 0; i < array.length - 1; i++) {
                         for (int j = 0; j < array.length - i - 1; j++) {
                             if (array[j] > array[j + 1]) {
@@ -747,7 +789,7 @@ export const Data = [
                             }
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -755,10 +797,10 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _spaceComplexity,
         link : "space-complexity",
         title : "Space Complexity",
-        image : img,
+        image : spaceComplexity,
         content1 : <><b>Space complexity is a measure of how much memory an algorithm uses as a function of the size of the input. Like time complexity, space complexity is often represented using big O notation. </b><br/>
 
         The space complexity of an algorithm can be determined by counting the amount of memory used by the algorithm, including memory used by the program itself, memory used by any data structures, and memory used for any temporary variables. <br/><br/>
@@ -766,16 +808,16 @@ export const Data = [
         <b>Linear search:</b> The space complexity of linear search algorithm is O(1), as it only uses a few variables like an index variable i, and key variable. Here's an example of linear search in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static int linearSearch(int[] array, int key) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet26')}>Copy</button>
+            <pre><code id="code-snippet26">
+                {`public static int linearSearch(int[] array, int key) {
                     for (int i = 0; i < array.length; i++) {
                         if (array[i] == key) {
                             return i;
                         }
                     }
                     return -1;
-                } */}
+                }`}
 
             </code></pre>
         </div>
@@ -783,23 +825,23 @@ export const Data = [
         <b>Recursive fibonacci:  </b> The space complexity of the recursive fibonacci algorithm is O(n), where n is the input number. In the worst case it calls fibonacci(n-1) and fibonacci(n-2) so the amount of memory required increases by a multiple of 2 on each call, as each level of recursion requires a new stack frame. Here's an example of recursive fibonacci in Java:  <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static int fibonacci(int n) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet27')}>Copy</button>
+            <pre><code id="code-snippet27">
+                {`public static int fibonacci(int n) {
                     if (n <= 1) {
                         return n;
                     }
                     return fibonacci(n-1) + fibonacci(n-2);
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         <b>Merge sort:</b> The space complexity of the merge sort algorithm is O(n) in the worst case and average case, as it requires a temporary array to merge the sorted sub-arrays. Here's an example of merge sort in Java:<br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void mergeSort(int[] array) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet28')}>Copy</button>
+            <pre><code id="code-snippet28">
+                {`public static void mergeSort(int[] array) {
                     if (array.length < 2) {
                         return;
                     }
@@ -834,7 +876,7 @@ export const Data = [
                         j++;
                         k++;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -843,7 +885,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _recursion,
         link : "recursion",
         title : "Recursion",
         image : recursion,
@@ -852,14 +894,14 @@ export const Data = [
         Here's an example of a simple recursive function in Java that calculates the factorial of a given number: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static int factorial(int n) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet29')}>Copy</button>
+            <pre><code id="code-snippet29">
+                {`public static int factorial(int n) {
                     if (n == 0) {
                         return 1;
                     }
                     return n * factorial(n - 1);
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -869,7 +911,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _tree,
         link : "trees",
         title : "Trees",
         image : tree,
@@ -879,9 +921,9 @@ export const Data = [
         Here's an example of a simple binary tree implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet30')}>Copy</button>
+            <pre><code id="code-snippet30">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -911,7 +953,7 @@ export const Data = [
                         }
                         return current;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -921,7 +963,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _binaryTree,
         link : "binary-tree",
         title : "Binary Tree",
         image : binary_tree,
@@ -930,9 +972,9 @@ export const Data = [
         Here's an example of a simple binary tree implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet31')}>Copy</button>
+            <pre><code id="code-snippet31">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -962,7 +1004,7 @@ export const Data = [
                         }
                         return current;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -972,7 +1014,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _binarySearchTree,
         link : "binary-search-tree",
         title : "Binary Search Tree",
         image : binary_search_tree,
@@ -981,9 +1023,9 @@ export const Data = [
         Here's an example of a simple binary search tree implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet32')}>Copy</button>
+            <pre><code id="code-snippet32">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1030,7 +1072,7 @@ export const Data = [
                                 ? containsRecursive(current.left, data)
                                 : containsRecursive(current.right, data);
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1042,7 +1084,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _avlTree,
         link : "avl-tree",
         title : "AVL Tree",
         image : avl_tree,
@@ -1052,9 +1094,9 @@ export const Data = [
         Here's an example of a simple AVL tree implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet33')}>Copy</button>
+            <pre><code id="code-snippet33">
+                {`class Node {
                     int data;
                     int height;
                     Node left;
@@ -1133,7 +1175,7 @@ export const Data = [
                         y.height = Math.max(height(y.left), height(y.right)) + 1;
                         return y;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1148,7 +1190,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _maxHeap,
         link : "max-heap",
         title : "Max Heap",
         image : max_heap,
@@ -1158,9 +1200,9 @@ export const Data = [
         Here's an example of a simple AVL tree implementation in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet34')}>Copy</button>
+            <pre><code id="code-snippet34">
+                {`class Node {
                     int data;
                     int height;
                     Node left;
@@ -1239,7 +1281,7 @@ export const Data = [
                         y.height = Math.max(height(y.left), height(y.right)) + 1;
                         return y;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1254,7 +1296,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _minHeap,
         link : "min-heap",
         title : "Min Heap",
         image : min_heap,
@@ -1264,9 +1306,9 @@ export const Data = [
         Here is an example of a basic MinHeap class in Java that uses an array to store the elements: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public class MinHeap {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet35')}>Copy</button>
+            <pre><code id="code-snippet35">
+                {`public class MinHeap {
                     private int[] heap;
                     private int size;
 
@@ -1342,7 +1384,7 @@ export const Data = [
                 pq.add(3);
                 pq.add(2);
                 pq.add(1);
-                pq.poll(); // returns 1 */}
+                pq.poll(); // returns 1`}
             </code></pre>
         </div>
         <br/>
@@ -1350,7 +1392,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _preOrder,
         link : "pre-order",
         title : "Pre Order",
         image : pre_order,
@@ -1359,9 +1401,9 @@ export const Data = [
         One common way to implement pre-order traversal in Java is to use recursion. Here is an example of a basic preOrder() method that implements pre-order traversal on a binary tree: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet36')}>Copy</button>
+            <pre><code id="code-snippet36">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1421,7 +1463,7 @@ export const Data = [
                             }
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1429,7 +1471,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _inOrder,
         link : "in-order",
         title : "In Order",
         image : in_order,
@@ -1438,9 +1480,9 @@ export const Data = [
         One common way to implement in-order traversal in Java is to use recursion. Here is an example of a basic inOrder() method that implements in-order traversal on a binary tree: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet37')}>Copy</button>
+            <pre><code id="code-snippet37">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1466,16 +1508,16 @@ export const Data = [
                             inOrder(node.right);
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         Another way of implementing in-order traversal is by using an explicit stack. Here is an example of an inOrder() method that implements in-order traversal on a binary tree using an explicit stack: <br/>
        
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet38')}>Copy</button>
+            <pre><code id="code-snippet38">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1504,7 +1546,7 @@ export const Data = [
                             node = node.right;
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1512,7 +1554,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _postOrder,
         link : "post-order",
         title : "Post Order",
         image : post_order,
@@ -1521,9 +1563,9 @@ export const Data = [
         One common way to implement post-order traversal in Java is to use recursion. Here is an example of a basic postOrder() method that implements post-order traversal on a binary tree: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet39')}>Copy</button>
+            <pre><code id="code-snippet39">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1549,16 +1591,16 @@ export const Data = [
                             System.out.print(node.data + " ");
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         Another way to implement post-order traversal is using two stacks. Here is an example of an postOrder() method that implements post-order traversal on a binary tree using two stacks: <br/>
        
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* class Node {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet40')}>Copy</button>
+            <pre><code id="code-snippet40">
+                {`class Node {
                     int data;
                     Node left;
                     Node right;
@@ -1589,7 +1631,7 @@ export const Data = [
                             System.out.print(temp.data + " ");
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1597,7 +1639,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _sorting,
         link : "sorting",
         title : "Sorting",
         image : img,
@@ -1614,9 +1656,9 @@ export const Data = [
         Here's an example of the bubble sort algorithm in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void bubbleSort(int[] arr) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet41')}>Copy</button>
+            <pre><code id="code-snippet41">
+                {`public static void bubbleSort(int[] arr) {
                     for (int i = 0; i < arr.length - 1; i++) {
                         for (int j = 0; j < arr.length - i - 1; j++) {
                             if (arr[j] > arr[j + 1]) {
@@ -1626,16 +1668,16 @@ export const Data = [
                             }
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         And an example of the quick sort algorithm in Java: <br/>
        
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public class QuickSort {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet42')}>Copy</button>
+            <pre><code id="code-snippet42">
+                {`public class QuickSort {
                     public static void sort(int[] arr, int low, int high) {
                         if (low < high) {
                             int pivotIndex = partition(arr, low, high);
@@ -1663,16 +1705,16 @@ export const Data = [
                             arr[j] = temp;
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
         Java also provides a sort method in the Arrays class, which uses the Dual-Pivot Quicksort algorithm. <br/>
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-                Arrays.sort(array); */}
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet43')}>Copy</button>
+            <pre><code id="code-snippet43">
+                {`int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+                Arrays.sort(array);`}
             </code></pre>
         </div>
         <br/>
@@ -1680,7 +1722,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _bubbleSort,
         link : "bubble-sort",
         title : "Bubble Sort",
         image : bubble_sort,
@@ -1690,9 +1732,9 @@ export const Data = [
         Here's an example of the bubble sort algorithm in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void bubbleSort(int[] arr) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet44')}>Copy</button>
+            <pre><code id="code-snippet44">
+                {`public static void bubbleSort(int[] arr) {
                     for (int i = 0; i < arr.length - 1; i++) {
                         for (int j = 0; j < arr.length - i - 1; j++) {
                             if (arr[j] > arr[j + 1]) {
@@ -1702,7 +1744,7 @@ export const Data = [
                             }
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1711,7 +1753,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _mergeSort,
         link : "merge-sort",
         title : "Merge Sort",
         image : merge_sort,
@@ -1723,9 +1765,9 @@ export const Data = [
         Here is an example of the merge sort algorithm implemented in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public class MergeSort {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet45')}>Copy</button>
+            <pre><code id="code-snippet45">
+                {`public class MergeSort {
                     public static void sort(int[] arr) {
                         int[] temp = new int[arr.length];
                         sort(arr, temp, 0, arr.length - 1);
@@ -1768,7 +1810,7 @@ export const Data = [
                             arr[k] = temp[k];
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1777,7 +1819,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _quickSort,
         link : "quick-sort",
         title : "Quick Sort",
         image : quick_sort,
@@ -1786,9 +1828,9 @@ export const Data = [
         Here's an example of the quicksort algorithm implemented in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public class QuickSort {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet46')}>Copy</button>
+            <pre><code id="code-snippet46">
+                {`public class QuickSort {
                     public static void sort(int[] arr, int low, int high) {
                         if (low < high) {
                             int pivotIndex = partition(arr, low, high);
@@ -1816,7 +1858,7 @@ export const Data = [
                             arr[j] = temp;
                         }
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1825,7 +1867,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _selectionSort,
         link : "selection-sort",
         title : "Selection Sort",
         image : selection_sort,
@@ -1837,9 +1879,9 @@ export const Data = [
         Here is an example of the selection sort algorithm implemented in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void selectionSort(int[] arr) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet47')}>Copy</button>
+            <pre><code id="code-snippet47">
+                {`public static void selectionSort(int[] arr) {
                     int n = arr.length;
                     for (int i = 0; i < n - 1; i++) {
                         int min_idx = i;
@@ -1852,7 +1894,7 @@ export const Data = [
                         arr[min_idx] = arr[i];
                         arr[i] = temp;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1861,7 +1903,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _insertionSort,
         link : "insertion-sort",
         title : "Insertion Sort",
         image : insertion_sort,
@@ -1876,9 +1918,9 @@ export const Data = [
         Here is an example of the insertion sort algorithm implemented in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public static void insertionSort(int[] arr) {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet48')}>Copy</button>
+            <pre><code id="code-snippet48">
+                {`public static void insertionSort(int[] arr) {
                     int n = arr.length;
                     for (int i = 1; i < n; i++) {
                         int key = arr[i];
@@ -1889,7 +1931,7 @@ export const Data = [
                         }
                         arr[j+1] = key;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1898,7 +1940,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _hashing,
         link : "hashing",
         title : "Hashing",
         image : hashing,
@@ -1907,9 +1949,9 @@ export const Data = [
         Here's an example of a simple hash function that can be used to store strings in a hash table: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* public class SimpleHashFunction {
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet49')}>Copy</button>
+            <pre><code id="code-snippet49">
+                {`public class SimpleHashFunction {
                     public static int hash(String key, int tableSize) {
                         int hashVal = 0;
                         for (int i = 0; i < key.length(); i++) {
@@ -1917,7 +1959,7 @@ export const Data = [
                         }
                         return hashVal % tableSize;
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1927,10 +1969,10 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _graph,
         link : "graph",
         title : "Graph",
-        image : img,
+        image : graph,
         content1 : <><b>A graph is a non-linear data structure that consists of a finite set of vertices (also called nodes) and a set of edges connecting these vertices. The vertices can represent anything, such as cities in a transportation network or web pages on the internet, and the edges represent relationships or connections between the vertices, such as roads between cities or links between web pages. </b> <br/><br/>
         
         There are two main types of graphs: <br/>
@@ -1939,9 +1981,9 @@ export const Data = [
         In Java, you can represent a graph using various data structures and classes, such as an adjacency matrix or an adjacency list. Here is an example of how you might represent an undirected graph using an adjacency list in Java: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* import java.util.LinkedList;
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet50')}>Copy</button>
+            <pre><code id="code-snippet50">
+                {`import java.util.LinkedList;
 
                 public class Graph {
                 private int numVertices;
@@ -1982,7 +2024,7 @@ export const Data = [
                     graph.addEdge(2, 3);
                     graph.printGraph();
                 }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/>
@@ -1997,7 +2039,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _dfs,
         link : "dfs",
         title : "DFS",
         image : dfs,
@@ -2006,9 +2048,9 @@ export const Data = [
         Here is an example of how to perform a DFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* import java.util.LinkedList;
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet51')}>Copy</button>
+            <pre><code id="code-snippet51">
+                {`import java.util.LinkedList;
 
                 public class DFS {
                 private int numVertices;
@@ -2051,7 +2093,7 @@ export const Data = [
                     graph.addEdge(2, 3);
                     graph.dfs(0);
                 }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/><br/>
@@ -2061,7 +2103,7 @@ export const Data = [
        </>,
     },
     {
-        video : videolink,
+        video : _bfs,
         link : "bfs",
         title : "BFS",
         image : bfs,
@@ -2070,9 +2112,9 @@ export const Data = [
         Here is an example of how to perform a BFS traversal on an undirected graph in Java using an adjacency list to represent the graph: <br/>
         
         <div className="code-clipboard">
-            <button id="clipboard-button" onClick={() => copyToClipboard()}>Copy</button>
-            <pre><code id="code-snippet">
-                {/* import java.util.LinkedList;
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet52')}>Copy</button>
+            <pre><code id="code-snippet52">
+                {`import java.util.LinkedList;
                 import java.util.Queue;
 
                 public class BFS {
@@ -2123,13 +2165,413 @@ export const Data = [
                         graph.addEdge(2, 3);
                         graph.bfs(0);
                     }
-                } */}
+                }`}
             </code></pre>
         </div>
         <br/><br/>
         The above example will output: 0 1 4 2 3 <br/>
         It is important to note that BFS is not the only algorithm for graph traversal, another commonly used algorithm is DFS (Depth-First Search) which is different from BFS in the order of visiting the vertices. BFS visits the adjacent vertex before going deeper, while DFS usually explores deeper in the graph before visiting the adjacent vertex. <br/>
         Also note that BFS can be used to solve other problems like finding the shortest path in an unweighted graph, test bipartiteness of a graph, and traversing a maze. <br/>
+       </>,
+    },
+    {
+        video : _radixSort,
+        link : "radix-sort",
+        title : "Radix Sort",
+        image : radix_sort,
+        content1 : <><b>Radix sort is a sorting algorithm that sorts data by comparing digits of the elements from right to left, starting with the least significant digit and ending with the most significant digit. It is a non-comparative sorting algorithm that makes use of the bucket sort technique to group elements based on their digits. The basic idea behind radix sort is to sort elements digit by digit, based on their place value, starting from the rightmost digit.</b> <br/><br/>
+        
+        Here's an example of how radix sort works in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet53')}>Copy</button>
+            <pre><code id="code-snippet53">
+                {`import java.util.*;
+
+                    public class RadixSort {
+                        public static void radixSort(int[] arr) {
+                            int n = arr.length;
+                            int max = getMax(arr);
+
+                            for (int exp = 1; max / exp > 0; exp *= 10) {
+                                countingSort(arr, n, exp);
+                            }
+                        }
+
+                        public static int getMax(int[] arr) {
+                            int max = arr[0];
+                            for (int i = 1; i < arr.length; i++) {
+                                if (arr[i] > max) {
+                                    max = arr[i];
+                                }
+                            }
+                            return max;
+                        }
+
+                        public static void countingSort(int[] arr, int n, int exp) {
+                            int[] output = new int[n];
+                            int[] count = new int[10];
+
+                            for (int i = 0; i < n; i++) {
+                                int digit = (arr[i] / exp) % 10;
+                                count[digit]++;
+                            }
+
+                            for (int i = 1; i < 10; i++) {
+                                count[i] += count[i - 1];
+                            }
+
+                            for (int i = n - 1; i >= 0; i--) {
+                                int digit = (arr[i] / exp) % 10;
+                                output[count[digit] - 1] = arr[i];
+                                count[digit]--;
+                            }
+
+                            for (int i = 0; i < n; i++) {
+                                arr[i] = output[i];
+                            }
+                        }
+
+                        public static void main(String[] args) {
+                            int[] arr = {170, 45, 75, 90, 802, 24, 2, 66};
+                            radixSort(arr);
+                            System.out.println(Arrays.toString(arr));
+                        }
+                    }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+        In this example, we have implemented the radix sort algorithm in Java. The radixSort() function takes an array of integers as input and sorts them using the radix sort algorithm. It first calculates the maximum element in the array, and then uses a loop to perform counting sort on each digit, starting from the least significant digit and ending with the most significant digit.  <br/>
+        <br/>
+        The getMax() function simply calculates the maximum element in the array. The countingSort() function is a modified version of the counting sort algorithm that sorts elements based on their digits. Finally, in the main() function, we have initialized an array of integers and sorted it using the radixSort() function, and then printed the sorted array using the Arrays.toString() method.<br/>
+       </>,
+    },
+    {
+        video : _adjacencyList,
+        link : "adjacency-list",
+        title : "Adjacency List",
+        image : adjacency_list_graph,
+        content1 : <><b>An adjacency list is a data structure used to represent a graph as a collection of linked lists. Each linked list represents a vertex in the graph and contains a list of its adjacent vertices.</b> <br/><br/>
+        
+        Here's an example of how to implement an adjacency list in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet54')}>Copy</button>
+            <pre><code id="code-snippet54">
+            {`import java.util.*;
+
+                public class Graph {
+                    private int V;
+                    private LinkedList<Integer>[] adjList;
+
+                    public Graph(int V) {
+                        this.V = V;
+                        adjList = new LinkedList[V];
+                        for (int i = 0; i < V; i++) {
+                            adjList[i] = new LinkedList<Integer>();
+                        }
+                    }
+
+                    public void addEdge(int u, int v) {
+                        adjList[u].add(v);
+                        adjList[v].add(u);
+                    }
+
+                    public void printGraph() {
+                        for (int i = 0; i < V; i++) {
+                            System.out.print(i + ": ");
+                            for (int v : adjList[i]) {
+                                System.out.print(v + " ");
+                            }
+                            System.out.println();
+                        }
+                    }
+
+                    public static void main(String[] args) {
+                        Graph graph = new Graph(5);
+                        graph.addEdge(0, 1);
+                        graph.addEdge(0, 4);
+                        graph.addEdge(1, 2);
+                        graph.addEdge(1, 3);
+                        graph.addEdge(1, 4);
+                        graph.addEdge(2, 3);
+                        graph.addEdge(3, 4);
+
+                        graph.printGraph();
+                    }
+                }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+
+        In this example, we have implemented an adjacency list to represent an undirected graph in Java. The Graph class has two instance variables: V, which represents the number of vertices in the graph, and adjList, which is an array of linked lists that represents the adjacency list. The constructor initializes the adjList array by creating a new linked list for each vertex. 
+        <br/><br/>
+        The addEdge() method takes two integers u and v as input and adds an edge between them by adding v to the linked list of u and adding u to the linked list of v.
+        <br/><br/>
+        The printGraph() method prints the adjacency list representation of the graph to the console. It does this by iterating over each vertex in the graph, printing the vertex number, and then iterating over the linked list of adjacent vertices and printing their numbers.
+        <br/><br/>
+        In the main() function, we create a new Graph object with 5 vertices and add edges between them. Finally, we print the adjacency list representation of the graph to the console.
+       </>,
+    },
+    {
+        video : _adjacencyMatrix,
+        link : "adjacency-matrix",
+        title : "Adjacency Matrix",
+        image : adjacency_Matrix_graph,
+        content1 : <><b>An adjacency matrix is a data structure used to represent a graph as a 2D array of boolean values. The value at matrix[i][j] is true if there is an edge between vertices i and j, and false otherwise.</b> <br/><br/>
+        
+        Here's an example of how to implement an adjacency matrix in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet55')}>Copy</button>
+            <pre><code id="code-snippet55">
+            {`import java.util.*;
+
+                public class Graph {
+                    private int V;
+                    private boolean[][] adjMatrix;
+
+                    public Graph(int V) {
+                        this.V = V;
+                        adjMatrix = new boolean[V][V];
+                    }
+
+                    public void addEdge(int u, int v) {
+                        adjMatrix[u][v] = true;
+                        adjMatrix[v][u] = true;
+                    }
+
+                    public void printGraph() {
+                        for (int i = 0; i < V; i++) {
+                            for (int j = 0; j < V; j++) {
+                                System.out.print(adjMatrix[i][j] ? "1 " : "0 ");
+                            }
+                            System.out.println();
+                        }
+                    }
+
+                    public static void main(String[] args) {
+                        Graph graph = new Graph(5);
+                        graph.addEdge(0, 1);
+                        graph.addEdge(0, 4);
+                        graph.addEdge(1, 2);
+                        graph.addEdge(1, 3);
+                        graph.addEdge(1, 4);
+                        graph.addEdge(2, 3);
+                        graph.addEdge(3, 4);
+
+                        graph.printGraph();
+                    }
+                }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+
+        In this example, we have implemented an adjacency matrix to represent an undirected graph in Java. The Graph class has two instance variables: V, which represents the number of vertices in the graph, and adjMatrix, which is a 2D boolean array that represents the adjacency matrix. The constructor initializes the adjMatrix array to false for all vertices.
+        <br/><br/>
+        The addEdge() method takes two integers u and v as input and adds an edge between them by setting adjMatrix[u][v] and adjMatrix[v][u] to true.
+        <br/><br/>
+        The printGraph() method prints the adjacency matrix representation of the graph to the console. It does this by iterating over each row and column of the matrix, printing a 1 if the value at matrix[i][j] is true and a 0 otherwise.
+        <br/><br/>
+        In the main() function, we create a new Graph object with 5 vertices and add edges between them. Finally, we print the adjacency matrix representation of the graph to the console.
+        
+       </>,
+    },
+    {
+        video : _linearProbing,
+        link : "linear-probing",
+        title : "Linear Probing",
+        image : linear_probing_hashing,
+        content1 : <><b>Linear probing is a technique used in hash tables to resolve collisions that occur when two or more keys are hashed to the same index in the table. When a collision occurs, linear probing searches for the next available slot in the table, starting from the index where the collision occurred, by incrementing the index until an empty slot is found.</b> <br/><br/>
+        
+        Here's an example of linear probing in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet56')}>Copy</button>
+            <pre><code id="code-snippet56">
+                {`public class HashTable {
+                    private int[] table;
+                    private int size;
+
+                    public HashTable(int size) {
+                        this.size = size;
+                        table = new int[size];
+                        Arrays.fill(table, -1); // initialize all slots to -1 (empty)
+                    }
+
+                    public void insert(int key) {
+                        int hash = key % size; // calculate the hash value
+                        int i = hash;
+                        while (table[i] != -1) { // check if slot is empty
+                            i = (i + 1) % size; // linear probing to find the next empty slot
+                            if (i == hash) { // if we've gone all the way around the table
+                                throw new RuntimeException("Table is full");
+                            }
+                        }
+                        table[i] = key; // insert key into the empty slot
+                    }
+
+                    public int search(int key) {
+                        int hash = key % size; // calculate the hash value
+                        int i = hash;
+                        while (table[i] != -1) { // check if slot is empty
+                            if (table[i] == key) { // check if the key is found
+                                return i;
+                            }
+                            i = (i + 1) % size; // linear probing to check the next slot
+                            if (i == hash) { // if we've gone all the way around the table
+                                break;
+                            }
+                        }
+                        return -1; // key not found
+                    }
+
+                    public void delete(int key) {
+                        int index = search(key); // find the index of the key
+                        if (index != -1) { // if the key is found
+                            table[index] = -1; // delete the key by setting the slot to -1 (empty)
+                        }
+                    }
+                }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+        In this implementation, the hash table is an array of integers, and the size of the table is specified when the table is created. The insert() method inserts a key into the table by first calculating the hash value of the key, and then using linear probing to find the next empty slot in the table. If the table is full, an exception is thrown.
+        <br/><br/>
+        The search() method searches for a key in the table by calculating the hash value of the key and then using linear probing to search for the key in the table. The delete() method deletes a key from the table by finding the index of the key using the search() method, and then setting the slot at that index to -1 (empty).
+       </>,
+    },
+    {
+        video : _quadraticProbing,
+        link : "quadratic-probing",
+        title : "Quadratic Probing",
+        image : quardatic_probing_hashing,
+        content1 : <><b>
+        Quadratic probing is a technique used in hash tables to resolve collisions that occur when two or more keys are hashed to the same index in the table. When a collision occurs, quadratic probing searches for the next available slot in the table, starting from the index where the collision occurred, by incrementing the index using a quadratic function until an empty slot is found.</b> <br/><br/>
+        
+        Here's an example of quadratic probing in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet57')}>Copy</button>
+            <pre><code id="code-snippet57">
+                {`public class HashTable {
+                    private int[] table;
+                    private int size;
+
+                    public HashTable(int size) {
+                        this.size = size;
+                        table = new int[size];
+                        Arrays.fill(table, -1); // initialize all slots to -1 (empty)
+                    }
+
+                    public void insert(int key) {
+                        int hash = key % size; // calculate the hash value
+                        int i = hash;
+                        int j = 1;
+                        while (table[i] != -1) { // check if slot is empty
+                            i = (hash + j * j) % size; // quadratic probing to find the next empty slot
+                            j++;
+                            if (i == hash) { // if we've gone all the way around the table
+                                throw new RuntimeException("Table is full");
+                            }
+                        }
+                        table[i] = key; // insert key into the empty slot
+                    }
+
+                    public int search(int key) {
+                        int hash = key % size; // calculate the hash value
+                        int i = hash;
+                        int j = 1;
+                        while (table[i] != -1) { // check if slot is empty
+                            if (table[i] == key) { // check if the key is found
+                                return i;
+                            }
+                            i = (hash + j * j) % size; // quadratic probing to check the next slot
+                            j++;
+                            if (i == hash) { // if we've gone all the way around the table
+                                break;
+                            }
+                        }
+                        return -1; // key not found
+                    }
+
+                    public void delete(int key) {
+                        int index = search(key); // find the index of the key
+                        if (index != -1) { // if the key is found
+                            table[index] = -1; // delete the key by setting the slot to -1 (empty)
+                        }
+                    }
+                }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+        In this implementation, the hash table is an array of integers, and the size of the table is specified when the table is created. The insert() method inserts a key into the table by first calculating the hash value of the key, and then using quadratic probing to find the next empty slot in the table. If the table is full, an exception is thrown.
+        <br/><br/>
+        The search() method searches for a key in the table by calculating the hash value of the key and then using quadratic probing to search for the key in the table. The delete() method deletes a key from the table by finding the index of the key using the search() method, and then setting the slot at that index to -1 (empty).
+        <br/><br/>
+        Note that in quadratic probing, the step size is determined by a quadratic function (hash + j*j) % size, where j is the number of probes. This means that the probes move away from the original hash index in a more spread out manner compared to linear probing, which can help to reduce clustering and improve the performance of the hash table.
+       </>,
+    },
+    {
+        video : _separateChaining,
+        link : "separate-chaining",
+        title : "Separate Chaining",
+        image : separate_chaining_hashing,
+        content1 : <><b>Separate chaining is a technique used in hash tables to resolve collisions that occur when two or more keys are hashed to the same index in the table. In this technique, each slot in the table contains a linked list of all the keys that hash to that index. When a collision occurs, the new key is added to the end of the linked list at the corresponding index in the table.</b> <br/><br/>
+        
+        Here's an example of separate chaining in Java: <br/>
+        
+        <div className="code-clipboard">
+            <button id="clipboard-button" onClick={() => copyToClipboard('code-snippet58')}>Copy</button>
+            <pre><code id="code-snippet58">
+                {`public class HashTable {
+                    private LinkedList<Integer>[] table;
+                    private int size;
+
+                    public HashTable(int size) {
+                        this.size = size;
+                        table = new LinkedList[size];
+                        for (int i = 0; i < size; i++) {
+                            table[i] = new LinkedList<Integer>(); // initialize each slot with an empty linked list
+                        }
+                    }
+
+                    public void insert(int key) {
+                        int hash = key % size; // calculate the hash value
+                        table[hash].add(key); // add the key to the end of the linked list at the hash index
+                    }
+
+                    public boolean search(int key) {
+                        int hash = key % size; // calculate the hash value
+                        LinkedList<Integer> list = table[hash]; // get the linked list at the hash index
+                        for (int i : list) {
+                            if (i == key) { // check if the key is found in the linked list
+                                return true;
+                            }
+                        }
+                        return false; // key not found
+                    }
+
+                    public void delete(int key) {
+                        int hash = key % size; // calculate the hash value
+                        LinkedList<Integer> list = table[hash]; // get the linked list at the hash index
+                        list.remove(Integer.valueOf(key)); // remove the key from the linked list
+                    }
+                }`}
+
+            </code></pre>
+        </div>
+        <br/><br/>
+        In this implementation, the hash table is an array of linked lists of integers, and the size of the table is specified when the table is created. The insert() method inserts a key into the table by first calculating the hash value of the key, and then adding the key to the end of the linked list at the corresponding index in the table.
+        <br/><br/>
+        The search() method searches for a key in the table by calculating the hash value of the key and then searching the linked list at the corresponding index for the key. The delete() method deletes a key from the table by calculating the hash value of the key, and then removing the key from the linked list at the corresponding index.
+        <br/><br/>
+        Note that in separate chaining, the number of keys that can be stored in the table is limited by the size of the table and the maximum size of each linked list. If the linked lists become too long, it can degrade the performance of the hash table. To mitigate this issue, the size of the table and the maximum size of each linked list should be carefully chosen based on the expected number of keys and the distribution of the hash function.
        </>,
     },
 ];

@@ -139,6 +139,9 @@ ul li a{
     cursor: pointer;
 }
 
+[id^="code-snippet"] {
+    text-align: left;
+}
 /* //////////////////////////////////// Feedback */
 
 #feedback-form {

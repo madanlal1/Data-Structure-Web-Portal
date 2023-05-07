@@ -26,7 +26,7 @@ export default function TopNavbar() {
               { 
                 Outline.map(element => {
                     return (
-                        <Link className='nav-link' to={`/tutorials/${element.link}`}>{element.topic}</Link>
+                        <Link key={element.index} className='nav-link' to={`/tutorials/${element.link}`}>{element.topic}</Link>
                     )
                 })
             }

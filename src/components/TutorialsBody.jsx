@@ -21,7 +21,6 @@ const TutorialsBody = () => {
         navigate(`/tutorials/${Outline[link].link}`)
     }
 
-    
     return (
         <>
             {
@@ -29,13 +28,12 @@ const TutorialsBody = () => {
                     return (
                         <React.Fragment key={element.title}>
                         <h1>{element.title}</h1>
-                        <div className="ratio ratio-16x9">
-                            <iframe src={element.video} allow='autoplay' title="YouTube video" allowFullScreen></iframe>
-                            {/* <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" allow='autoplay' title="YouTube video" allowFullScreen></iframe> */}
+                        <div className="ratio ratio-16x9"> 
+                            <iframe title={element.title} width="560" height="315" src={`https://www.youtube.com/embed/${element.video}?autoplay=1`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                         </div> <br/>
-                        <p>{element.content1}</p>
+                        <div>{element.content1}</div>
                         <button onClick={() => previous()} disabled ={(element.link==='data-structure')? true : false } className="btn btn-primary" id='left'>Previous</button>
-                        <button onClick={() => next()} disabled = {(element.link==='bfs')? true : false} className=" btn btn-primary" id='right'>Next</button>
+                        <button onClick={() => next()} disabled = {(element.link==='separate-chaining')? true : false} className=" btn btn-primary" id='right'>Next</button>
                         </React.Fragment>
                     ) 
                 })
