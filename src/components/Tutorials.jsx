@@ -9,19 +9,20 @@ const Tutorials = () => {
     return (
         <>
         <TopNavbar/>
-        <div className="row g-0">
-            {/* <div className="col-3" id="sidebar">
-                <Sidebar/>
-            </div> */}
-            <div className="col-1">
+        <div className="row g-0" style={{padding: '0 20px'}}>
+
+            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-1">
                 {/* for space */}
             </div>
-            <div className="col-6" id="tutorials-body">
+
+            <div className="col-xl-6 col-lg-6 col-md-8 col-sm-10" id="tutorials-body">
                 <TutorialsBody/>
             </div>
-            <div className="col-2">
+            
+            <div className="col-xl-4 col-lg-4 col-md-2 col-sm-1">
                 {/* for space */}
             </div>
+
         </div> 
         <Footer/>
         </>

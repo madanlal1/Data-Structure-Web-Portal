@@ -19,7 +19,7 @@ export default function StaticCard() {
         <h1>Explore Data Structures</h1>
       </div>
 
-      <div className="search-input" style={{width:'40%',display:'grid', margin:'30px auto'}}>
+      <div className="search-input" style={{width:'50%',display:'grid', margin:'30px auto'}}>
           <input type="text" onChange={e => setSearch(e.target.value)} className="form-control" placeholder="Search "/>
         <SearchIcon className='icon'/>
       </div>

@@ -5,8 +5,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/css/style.css';
 import {Outline} from '../assets/content/Outline';
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
 
 export default function TopNavbar() {
+
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleSelect = () => {
+    setShowDropdown(false);
+  };
+
+  const handleDropdownClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+
   return (
     <Navbar collapseOnSelect expand="lg" id="_navbar" variant="dark">
       <Container id="navContainer">
@@ -20,13 +33,15 @@ export default function TopNavbar() {
               id="nav-dropdown-dark-example"
               title="Topics"
               menuVariant="dark"
-              
+              show={showDropdown}
+              onSelect={handleSelect}
+              onClick={handleDropdownClick}
             >
               <div className="nav-dropdown-scroll">
               { 
                 Outline.map(element => {
                     return (
-                        <Link key={element.index} className='nav-link' to={`/tutorials/${element.link}`}>{element.topic}</Link>
+                        <Link key={element.index} className='nav-link' to={`/tutorials/${element.link}`} onClick={() => setShowDropdown(false)}>{element.topic}</Link>
                     )
                 })
             }

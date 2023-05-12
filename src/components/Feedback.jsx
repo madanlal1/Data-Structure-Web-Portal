@@ -37,11 +37,11 @@ const Feedback = () => {
         <>
         <TopNavbar/>
         <div className="row g-0">
-            <div id="feedback-vector" className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <img src={feedbackVector} alt="feedback-vector" width="90%"/>
+            <div id="feedback-vector" className="col-xl-6 col-lg-6 col-md-5 col-sm-12" style={{display:'flex', justifyContent:'center', alignItems:'center', boxSizing:'border-box', padding:'30px'}}>
+                <img src={feedbackVector} alt="feedback-vector" width="100%"/>
             </div>
             
-            <div id="feedback-form" className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="feedback-form" className="col-xl-6 col-lg-6 col-md-7 col-sm-12">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="exampleFormControlInput1">Fullname</label>
