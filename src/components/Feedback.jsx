@@ -22,7 +22,7 @@ const Feedback = () => {
             Rating:rating,
             Comment:comment
         }
-        axios.post('https://sheet.best/api/sheets/058802f3-cbb0-45dc-ba82-bafacea534fd',data).then(response => {
+        axios.post('https://sheet.best/api/sheets/c6230704-223e-4cc5-b00a-ca297dd66690',data).then(response => {
 
             alert("Thank You for your Feedback.");
             setFullname('');
