@@ -9,11 +9,11 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/tutorials" exact element={<Tutorials/>}/>
-      <Route path="/tutorials/:topic" element={<Tutorials/>}/>
-      <Route path="/feedback" element={<Feedback/>}/>
-      <Route path="/aboutus" element={<AboutUS/>}/>
+      <Route exact path="/" element={<Home/>}/>
+      <Route exact path="/tutorials" exact element={<Tutorials/>}/>
+      <Route exact path="/tutorials/:topic" element={<Tutorials/>}/>
+      <Route exact path="/feedback" element={<Feedback/>}/>
+      <Route exact path="/aboutus" element={<AboutUS/>}/>
     </Routes>  
   )
 }
