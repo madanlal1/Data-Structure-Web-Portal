@@ -2,7 +2,6 @@ import '../assets/css/style.css';
 import feedbackVector from '../assets/images/feedback.jpg'
 import Ratings from "./Ratings";
 import TopNavbar from './TopNavbar';
-import Footer from './Footer';
 import {useState} from 'react';
 import axios from 'axios';
 
@@ -36,8 +35,8 @@ const Feedback = () => {
     return (
         <>
         <TopNavbar/>
-        <div className="row g-0">
-            <div id="feedback-vector" className="col-xl-6 col-lg-6 col-md-5 col-sm-12" style={{display:'flex', justifyContent:'center', alignItems:'center', boxSizing:'border-box', padding:'30px'}}>
+        <div className="row g-0 feedbackContainer">
+            <div id="feedback-vector" className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
                 <img src={feedbackVector} alt="feedback-vector" width="100%"/>
             </div>
             
@@ -64,7 +63,6 @@ const Feedback = () => {
                     </form>
             </div>
         </div>
-        <Footer/>
         </>
     )
 }

@@ -25,8 +25,8 @@ export default function StaticCard() {
       </div>
       <div className="row g-0 m-2 ">
         {
-          Data.filter(ele => ele.title.toLowerCase().match(search.toLocaleLowerCase())).map(element => 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          Data.filter(ele => ele.title.toLowerCase().match(search.toLocaleLowerCase())).map((element, index) => 
+            <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
               <ContentCard image={element.image} name={element.title} key={element.title} link={element.link} />
               {found = true}
             </div>

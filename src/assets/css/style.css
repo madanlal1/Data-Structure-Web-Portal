@@ -57,13 +57,16 @@ h1 {
     width: 100%;
     height: 2.5rem;
     margin-top: 50px;
-    position: relative;
-    bottom: 0;
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
 }
 #footer_para {
     text-align: center;
     font-size: 1rem;
     color: white;
+    flex: 1;
+    margin: 0;
 }
 #div_para {
     padding-top: 10px;
@@ -149,6 +152,15 @@ ul li a{
 }
 #feedback-vector {
     margin: auto;
+    display:'flex';
+    justify-content:center;
+    align-items:'center';
+    box-sizing:'border-box';
+    padding:'30px';
+}
+
+.feedbackContainer {
+    margin-top: 100px;
 }
 
 /* ////////////////////////////////////// Card Carousal */

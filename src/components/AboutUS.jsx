@@ -1,5 +1,4 @@
 import TopNavbar from "./TopNavbar";
-import Footer from "./Footer";
 import '../assets/css/style.css';
 import madan from '../assets/images/madan.png';
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -14,7 +13,8 @@ export default function AboutUS() {
         <div className='outerDiv'>
                 <div className="row g-0"  style={{ paddingLeft: "50px" }}>
                     <h1>Technical Team</h1>
-                    <br /><br /><br />
+                    <br/><br/><br/>
+                    <br/><br/><br/>
                 </div>
 
                 <div className="row g-0">
@@ -46,7 +46,6 @@ export default function AboutUS() {
                 </div>
             </div>
         </div>
-        <Footer/>
         </>
     )
 }
